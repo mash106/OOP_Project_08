@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.oop_project_group_8.loginSceneController"
+            prefHeight="600.0" prefWidth="800.0"
+            style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);">
+
+    <Label
+            text="Fish Hatchery Management"
+            AnchorPane.topAnchor="100"
+            AnchorPane.leftAnchor="200"
+            AnchorPane.rightAnchor="200"
+            style="-fx-font-size: 24px;
+               -fx-font-weight: bold;
+               -fx-text-fill: white;"
+            alignment="CENTER"/>
+
+    <TextField
+            promptText="User ID"
+            fx:id="userIdField"
+            AnchorPane.topAnchor="170"
+            AnchorPane.leftAnchor="200"
+            AnchorPane.rightAnchor="200"
+            style="-fx-background-color: white;
+               -fx-background-radius: 5;
+               -fx-padding: 10;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </TextField>
+
+    <TextField
+            promptText="Email Address"
+            fx:id="emailField"
+            AnchorPane.topAnchor="250"
+            AnchorPane.leftAnchor="200"
+            AnchorPane.rightAnchor="200"
+            style="-fx-background-color: white;
+               -fx-background-radius: 5;
+               -fx-padding: 10;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </TextField>
+
+    <PasswordField
+            promptText="Password"
+            fx:id="passwordField"
+            AnchorPane.topAnchor="330"
+            AnchorPane.leftAnchor="200"
+            AnchorPane.rightAnchor="200"
+            style="-fx-background-color: white;
+               -fx-background-radius: 5;
+               -fx-padding: 10;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </PasswordField>
+
+    <ComboBox
+            fx:id="userTypeComboBox"
+            promptText="Select User Type"
+            AnchorPane.topAnchor="410"
+            AnchorPane.leftAnchor="200"
+            AnchorPane.rightAnchor="200"
+            prefWidth="400"
+            style="-fx-background-color: white;
+               -fx-background-radius: 5;">
+    </ComboBox>
+
+    <Button
+            text="Login"
+            fx:id="loginButton"
+            AnchorPane.topAnchor="490"
+            AnchorPane.leftAnchor="250"
+            AnchorPane.rightAnchor="450"
+            style="-fx-background-color: #27ae60;
+               -fx-text-fill: white;
+               -fx-background-radius: 5;
+               -fx-padding: 10 20;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </Button>
+
+    <Button
+            text="Forget Password"
+            fx:id="forgetPasswordButton"
+            AnchorPane.topAnchor="490"
+            AnchorPane.leftAnchor="450"
+            AnchorPane.rightAnchor="250"
+            style="-fx-background-color: #e74c3c;
+               -fx-text-fill: white;
+               -fx-background-radius: 5;
+               -fx-padding: 10 20;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </Button>
+
+
+
+</AnchorPane>
+
