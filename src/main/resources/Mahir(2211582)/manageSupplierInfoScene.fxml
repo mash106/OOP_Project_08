@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.ManageSupplierInfoSceneController">
-    <TableView fx:id="supplierTable"
-               layoutX="50.0" layoutY="100.0"
-               prefHeight="350.0"
-               prefWidth="700.0">
+    <TableView fx:id="supplierTable" layoutX="50.0" layoutY="100.0" prefHeight="350.0" prefWidth="700.0">
         <columns>
-            <TableColumn text="Supplier ID" prefWidth="100.0"/>
-            <TableColumn text="Name" prefWidth="200.0"/>
-            <TableColumn text="Contact" prefWidth="150.0"/>
-            <TableColumn text="Products" prefWidth="250.0"/>
+            <TableColumn prefWidth="100.0" text="Supplier ID" />
+            <TableColumn prefWidth="200.0" text="Name" />
+            <TableColumn prefWidth="150.0" text="Contact" />
+            <TableColumn prefWidth="250.0" text="Products" />
         </columns>
     </TableView>
 
-    <Button text="Add New Supplier"
-            layoutX="50.0" layoutY="470.0"
-            styleClass="inventory-button"/>
+    <Button layoutX="486.0" layoutY="470.0" styleClass="inventory-button" text="Add New Supplier" />
 
-    <Button text="Edit Selected Supplier"
-            layoutX="50.0" layoutY="500.0" style="-fx-background-color: #e74c3c;
-            -fx-text-fill: white;
-            -fx-background-radius: 5;
-            -fx-padding: 10 20;"/>
+    <Button layoutX="486.0" layoutY="516.0" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Edit Selected Supplier" />
+   <TextField fx:id="supplierNameTF" layoutX="116.0" layoutY="470.0" />
+   <TextField fx:id="supplierContactTF" layoutX="116.0" layoutY="504.0" />
+   <Label layoutX="23.0" layoutY="474.0" text="Supplier Name:" textFill="WHITE" />
+   <Label layoutX="15.0" layoutY="545.0" text="Products Supplied:" textFill="WHITE" />
+   <Label layoutX="19.0" layoutY="508.0" text="Supplier Contact:" textFill="WHITE" />
+   <ComboBox fx:id="productSuppliedCB" layoutX="116.0" layoutY="541.0" prefWidth="150.0" />
 
 </AnchorPane>
