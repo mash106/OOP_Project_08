@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.LowStockAlertSceneController">
+    <Label layoutX="50.0" layoutY="30.0"
+           text="Low Stock Alerts"
+           style="-fx-font-size: 24px; -fx-text-fill: #2C3E50;"/>
+
+    <TableView fx:id="lowStockAlertsTable"
+               layoutX="50.0" layoutY="100.0"
+               prefHeight="350.0"
+               prefWidth="700.0">
+        <columns>
+            <TableColumn text="Item ID" prefWidth="100.0"/>
+            <TableColumn text="Item Name" prefWidth="250.0"/>
+            <TableColumn text="Current Quantity" prefWidth="150.0"/>
+            <TableColumn text="Restock Level" prefWidth="200.0"/>
+        </columns>
+    </TableView>
+
+    <Button text="Restock Selected Items"
+            layoutX="50.0" layoutY="500.0" style="-fx-background-color: #e74c3c;
+            -fx-text-fill: white;
+            -fx-background-radius: 5;
+            -fx-padding: 10 20;"/>
+
+</AnchorPane>

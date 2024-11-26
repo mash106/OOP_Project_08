@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.AddItemSceneController">
+
+    <Label layoutX="50.0" layoutY="30.0"
+           text="Add New Inventory Item"
+           style="-fx-font-size: 24px; -fx-text-fill: #2C3E50;"/>
+
+    <TextField fx:id="itemNameField"
+               layoutX="50.0" layoutY="100.0"
+               promptText="Item Name"
+               prefWidth="700.0"/>
+
+    <TextField fx:id="skuField"
+               layoutX="50.0" layoutY="170.0"
+               promptText="SKU Number"
+               prefWidth="350.0"/>
+
+    <TextField fx:id="priceField"
+               layoutX="400.0" layoutY="170.0"
+               promptText="Price"
+               prefWidth="350.0"/>
+
+    <TextField fx:id="quantityField"
+               layoutX="50.0" layoutY="240.0"
+               promptText="Quantity"
+               prefWidth="350.0"/>
+
+    <TextArea fx:id="descriptionArea"
+              layoutX="50.0" layoutY="310.0"
+              promptText="Item Description"
+              prefHeight="150.0"
+              prefWidth="700.0"/>
+
+    <Button text="Add Item to Inventory"
+            layoutX="50.0" layoutY="480.0"
+            styleClass="inventory-button"/>
+</AnchorPane>

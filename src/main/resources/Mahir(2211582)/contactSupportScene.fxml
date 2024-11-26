@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="568.0" prefWidth="816.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.ContactSupportSceneController">
+    <Label layoutX="50.0" layoutY="30.0"
+           text="Customer Support"
+           style="-fx-font-size: 24px; -fx-text-fill: #1E4E8C;"/>
+
+    <ComboBox fx:id="supportIssueComboBox"
+              layoutX="50.0" layoutY="100.0"
+              promptText="Select Issue Type"
+              prefWidth="700.0"/>
+
+    <TextField fx:id="nameField"
+               layoutX="50.0" layoutY="170.0"
+               promptText="Your Name"
+               prefWidth="300.0"/>
+
+    <TextField fx:id="emailField"
+               layoutX="400.0" layoutY="170.0"
+               promptText="Email Address"
+               prefWidth="350.0"/>
+
+    <TextArea fx:id="supportMessageTextArea"
+              layoutX="50.0" layoutY="250.0"
+              prefHeight="250.0"
+              prefWidth="700.0"
+              promptText="Describe your support issue in detail..."/>
+
+    <Button text="Submit Support Ticket"
+            layoutX="50.0" layoutY="500.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;"/>
+
+</AnchorPane>
