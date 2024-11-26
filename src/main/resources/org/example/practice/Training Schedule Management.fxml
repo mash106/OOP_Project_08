@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="Training Schedule Management"
+           AnchorPane.leftAnchor="20"
+           AnchorPane.topAnchor="20"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="trainingProgramName"
+               AnchorPane.leftAnchor="20"
+               AnchorPane.topAnchor="60"
+               promptText="Training Program Name"/>
+
+    <DatePicker fx:id="trainingDate"
+                AnchorPane.leftAnchor="20"
+                AnchorPane.topAnchor="100"
+                promptText="Select Training Date"/>
+
+    <TableView fx:id="employeeTrainingTable"
+               AnchorPane.topAnchor="140"
+               AnchorPane.leftAnchor="20"
+               AnchorPane.rightAnchor="20"
+               AnchorPane.bottomAnchor="100"
+               prefHeight="300">
+        <columns>
+            <TableColumn text="Employee ID" />
+            <TableColumn text="Name" />
+            <TableColumn text="Training Status" />
+        </columns>
+    </TableView>
+
+    <Button text="Create Training Program"
+            AnchorPane.leftAnchor="20"
+            AnchorPane.bottomAnchor="20"
+    />
+
+    <Button text="Send Notifications"
+            AnchorPane.leftAnchor="250"
+            AnchorPane.bottomAnchor="20"
+    />
+</AnchorPane>

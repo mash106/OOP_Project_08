@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="605.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AttendanceTrackingController">
+    <DatePicker fx:id="attendanceDatePicker" layoutX="172.0" layoutY="20.0" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="20.0" />
+
+    <TableView fx:id="attendanceTableView" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+        <columns>
+            <TableColumn fx:id="employeeIdColumn" text="Employee ID" />
+            <TableColumn fx:id="nameColumn" text="Name" />
+            <TableColumn fx:id="attendanceStatusColumn" text="Attendance Status" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="saveAttendanceButton" text="Save Attendance" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+   <Label layoutX="33.0" layoutY="24.0" prefHeight="17.0" prefWidth="112.0" text="Date" />
+</AnchorPane>
