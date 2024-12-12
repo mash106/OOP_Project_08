@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="554.0" prefWidth="748.0" styleClass="sales-report-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.SalesReportController">
+<AnchorPane prefHeight="554.0" prefWidth="748.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="sales-report-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.SalesReportController">
 
     <Label styleClass="title-label" text="Sales Reports Generator" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

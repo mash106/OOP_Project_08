@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="553.0" prefWidth="632.0" styleClass="seasonal-promotions-pane" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.SeasonalPromotionsController">
+<fx:root prefHeight="553.0" prefWidth="632.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="seasonal-promotions-pane" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.SeasonalPromotionsController">
 
     <Label styleClass="title-label" text="Seasonal Promotions Planner" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

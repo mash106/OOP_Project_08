@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="608.0" prefWidth="852.0" styleClass="health-monitoring-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.HealthMonitoringController">
+<AnchorPane prefHeight="608.0" prefWidth="852.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="health-monitoring-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.HealthMonitoringController">
 
     <Label styleClass="title-label" text="Fish Health Assessment" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -20,13 +20,13 @@
 
     <ComboBox fx:id="fishSpeciesComboBox" prefWidth="250" promptText="Select Fish Species" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
 
-    <Label text="Mortality Count:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
+    <Label text="Mortality Count:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
     <TextField fx:id="mortalityCountField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="190" />
 
-    <Label text="Behavior:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" />
+    <Label text="Behavior:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" />
     <TextArea fx:id="behaviorTextArea" prefHeight="116.0" prefWidth="703.0" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="250" />
 
-    <Label text="Appetite:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="370" />
+    <Label text="Appetite:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="370" />
     <ComboBox fx:id="appetiteComboBox" prefWidth="250" promptText="Select Appetite Level" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="390" />
 
     <Button fx:id="submitHealthAssessmentBtn" onAction="# handleSubmitHealthAssessment" prefWidth="250" text="Submit Health Assessment" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="430" />

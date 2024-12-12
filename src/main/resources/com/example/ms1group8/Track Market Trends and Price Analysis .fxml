@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="524.0" prefWidth="621.0" styleClass="market-analysis-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.MarketAnalysisController">
+<AnchorPane prefHeight="524.0" prefWidth="621.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="market-analysis-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.MarketAnalysisController">
 
     <Label styleClass="title-label" text="Market Trends and Price Analysis" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -19,7 +19,7 @@
 
     <ComboBox fx:id="fishSpeciesComboBox" onAction="#updateMarketTrends" prefWidth="250" promptText="Select Fish Species" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70" />
 
-    <Label text="Price History:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
+    <Label text="Price History:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
     <TableView fx:id="priceHistoryTable" prefHeight="150" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="140">
         <columns>
             <TableColumn fx:id="dateColumn" prefWidth="134.0" text="Date" />
@@ -27,7 +27,7 @@
         </columns>
     </TableView>
 
-    <Label text="Update Market Price:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
+    <Label text="Update Market Price:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
     <TextField fx:id="newMarketPriceField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="320" />
 
     <Button fx:id="updatePricesBtn" onAction="#handleUpdatePrices" prefWidth="250" text="Update Prices" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="370" />

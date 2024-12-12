@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="554.0" prefWidth="519.0" styleClass="fish-transportation-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FishTransportationController">
+<AnchorPane prefHeight="554.0" prefWidth="519.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="fish-transportation-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FishTransportationController">
 
     <Label styleClass="title-label" text="Fish Logistics" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -24,7 +24,7 @@
         </columns>
     </TableView>
 
-    <Label text="Packing Details:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="280" />
+    <Label text="Packing Details:" textFill="#f5f5f5" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="280" />
     <TextArea fx:id="packingDetailsArea" prefHeight="100" prefWidth="250" promptText="Packing and Courier Arrangements" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
 
     <Button fx:id="coordinateTransportBtn" onAction="#handleCoordinateTransport" prefWidth="250" text="Coordinate Transportation" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="420" />

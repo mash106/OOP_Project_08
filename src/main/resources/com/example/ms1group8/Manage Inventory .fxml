@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="539.0" prefWidth="605.0" styleClass="inventory-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.InventoryManagementController">
+<AnchorPane prefHeight="539.0" prefWidth="605.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="inventory-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.InventoryManagementController">
 
     <Label styleClass="title-label" text="Inventory Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -26,7 +26,7 @@
 
     <Button fx:id="generatePOBtn" onAction="#handleGeneratePurchaseOrder" prefWidth="250" text="Generate Purchase Order" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="280" />
 
-    <Label text="Reorder Threshold:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="330" />
+    <Label text="Reorder Threshold:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="330" />
     <TextField fx:id="reorderThresholdField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="350" />
 
     <Button fx:id="setNotificationsBtn" onAction="#handleSetNotifications" prefWidth="250" text="Set Reorder Notifications" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="400" />

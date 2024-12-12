@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="494.0" prefWidth="639.0" styleClass="order-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.OrderManagementController">
+<AnchorPane prefHeight="494.0" prefWidth="639.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="order-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.OrderManagementController">
 
     <Label styleClass="title-label" text="Customer Order Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -19,10 +19,10 @@
 
     <ComboBox fx:id="fishSpeciesComboBox" prefWidth="250" promptText="Select Fish Species" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
 
-    <Label text="Order Quantity:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
+    <Label text="Order Quantity:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
     <TextField fx:id="quantityField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="190" />
 
-    <Label text="Total Price:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" />
+    <Label text="Total Price:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" />
     <TextField fx:id="totalPriceField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="250" />
 
     <Button fx:id="confirmOrderBtn" onAction="#handleConfirmOrder" prefWidth="250" text="Confirm Order" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />

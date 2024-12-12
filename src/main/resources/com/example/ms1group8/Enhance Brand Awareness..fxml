@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="561.0" prefWidth="745.0" styleClass="brand-awareness-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.BrandAwarenessController">
+<AnchorPane prefHeight="561.0" prefWidth="745.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="brand-awareness-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.BrandAwarenessController">
 
     <Label styleClass="title-label" text="Brand Awareness Campaign" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -36,6 +36,6 @@
 
     <Button fx:id="publishCampaignBtn" layoutX="20.0" layoutY="413.0" onAction="#handlePublishCampaign" prefWidth="250" text="Publish Campaign" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="413.0" />
 
-    <Label layoutX="20.0" layoutY="448.0" text="Engagement Metrics:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="448.0" />
+    <Label layoutX="20.0" layoutY="448.0" text="Engagement Metrics:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="448.0" />
     <TextField fx:id="engagementMetricsField" editable="false" layoutX="20.0" layoutY="475.0" prefWidth="250" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="475.0" />
 </AnchorPane>

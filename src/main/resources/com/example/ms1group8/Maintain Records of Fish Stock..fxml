@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="530.0" prefWidth="585.0" styleClass="fish-stock-records-pane" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FishStockRecordsController">
+<fx:root prefHeight="530.0" prefWidth="585.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="fish-stock-records-pane" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FishStockRecordsController">
 
     <Label layoutX="189.0" layoutY="23.0" styleClass="title-label" text="Fish Stock Management" AnchorPane.leftAnchor="189.0" AnchorPane.topAnchor="23.0">
         <font>
@@ -24,10 +24,10 @@
         </columns>
     </TableView>
 
-    <Label text="Growth Rate:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="280" />
+    <Label text="Growth Rate:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="280" />
     <TextField fx:id="growthRateField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
 
-    <Label text="Mortality Rate:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="340" />
+    <Label text="Mortality Rate:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="340" />
     <TextField fx:id="mortalityRateField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="360" />
 
     <Button fx:id="generateReportBtn" onAction="#handleGenerateReport" prefWidth="250" text="Generate Stock Report" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="400" />

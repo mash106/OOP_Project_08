@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="503.0" prefWidth="652.0" styleClass="feed-distribution-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FeedDistributionController">
+<AnchorPane prefHeight="503.0" prefWidth="652.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="feed-distribution-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FeedDistributionController">
 
     <Label styleClass="title-label" text="Feed Distribution Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -29,10 +29,10 @@
         </items>
     </ComboBox>
 
-    <Label text="Feed Quantity (kg):" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
+    <Label text="Feed Quantity (kg):" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
     <TextField fx:id="feedQuantityField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="190" />
 
-    <Label text="Current Inventory Level:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" />
+    <Label text="Current Inventory Level:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" />
     <TextField fx:id="currentInventoryField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="250" />
 
     <Button fx:id="updateInventoryBtn" onAction="#handleUpdateInventory" prefWidth="250" text="Update Inventory" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />

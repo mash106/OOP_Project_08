@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="535.0" prefWidth="522.0" styleClass="breeding-operations-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.BreedingOperationsController">
+<AnchorPane prefHeight="535.0" prefWidth="522.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="breeding-operations-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.BreedingOperationsController">
 
     <Label styleClass="title-label" text="Breeding Dashboard" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -18,10 +18,10 @@
 
     <ComboBox fx:id="broodstockSpeciesComboBox" prefWidth="250" promptText="Select Broodstock Species" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70" />
 
-    <Label text="Broodstock Health:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
+    <Label text="Broodstock Health:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
     <TextField fx:id="broodstockHealthField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="140" />
 
-    <Label text="Spawning Cycle:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="180" />
+    <Label text="Spawning Cycle:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="180" />
     <TextField fx:id="spawningCycleField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="200" />
 
     <Button fx:id="eggCollectionBtn" onAction="#handleEggCollection" prefWidth="250" text="Manage Egg Collection" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="250" />

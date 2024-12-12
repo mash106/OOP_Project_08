@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="533.0" prefWidth="765.0" styleClass="marketing-campaign-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.MarketingCampaignController">
+<AnchorPane prefHeight="533.0" prefWidth="765.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="marketing-campaign-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.MarketingCampaignController">
 
     <Label styleClass="title-label" text="Marketing Campaign Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -24,7 +24,7 @@
         </columns>
     </TableView>
 
-    <Label layoutX="20.0" layoutY="288.0" text="Campaign Concept:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="288.0" />
+    <Label layoutX="20.0" layoutY="288.0" text="Campaign Concept:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="288.0" />
     <TextArea fx:id="campaignConceptArea" layoutX="20.0" layoutY="322.0" prefHeight="100" prefWidth="250" promptText="Describe new campaign concept" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="322.0" />
 
     <Button fx:id="createCampaignBtn" layoutX="20.0" layoutY="430.0" onAction="#handleCreateCampaign" prefWidth="250" text="Create New Campaign" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="430.0" />
