@@ -25,9 +25,9 @@
         </columns>
     </TableView>
 
-    <TextField fx:id="customerSearchField" prefWidth="250" promptText="Search Customers" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" />
+    <TextField fx:id="customerSearchField" prefWidth="250" promptText="Search Customers" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="230" onAction="#handleCustomerSearch" />
 
-    <Button fx:id="createProfileBtn" prefWidth="250" style="-fx-background-color: #72ff1c;" text="Create New Profile" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="280" />
+    <Button fx:id="createProfileBtn" prefWidth="250" style="-fx-background-color: #72ff1c;" text="Create New Profile" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="280" onAction="#handleCreateProfile" />
 
     <TextArea fx:id="customerNotesArea" prefHeight="100" prefWidth="250" promptText="Customer Interaction Notes" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="330" />
 </AnchorPane>

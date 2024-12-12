@@ -23,14 +23,14 @@ public class BrandAwarenessController {
 
     @FXML
     public void initialize() {
-
+        // Initialize ComboBox if needed, though it's already populated in FXML
     }
 
     @FXML
     public void handlePublishCampaign(ActionEvent actionEvent) {
         String selectedChannel = channelComboBox.getSelectionModel().getSelectedItem();
         String campaignConcept = campaignConceptArea.getText();
-        String engagementMetrics = "1000 views, 500 likes";
+        String engagementMetrics = "1000 views, 500 likes"; // Example metrics for demonstration
 
         if (selectedChannel == null || campaignConcept.isEmpty()) {
             showAlert("Incomplete Data", "Please fill in all fields before publishing the campaign.");
