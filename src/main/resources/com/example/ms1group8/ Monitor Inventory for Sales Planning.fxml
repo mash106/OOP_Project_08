@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="560.0" prefWidth="886.0" styleClass="inventory-sales-planning-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventorySalesPlanningController">
+<fx:root prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.InventorySalesPlanningController">
 
     <Label styleClass="title-label" text="Inventory Sales Planning" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
@@ -28,4 +28,4 @@
     <TextField fx:id="demandForecastField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="250" />
 
     <Button fx:id="updateProductionBtn" onAction="#handleUpdateProduction" prefWidth="250" text="Update Production Target" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
-</AnchorPane>
+</fx:root>

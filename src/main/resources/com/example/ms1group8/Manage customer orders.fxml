@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="494.0" prefWidth="639.0" styleClass="order-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OrderManagementController">
+<AnchorPane prefHeight="494.0" prefWidth="639.0" styleClass="order-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.OrderManagementController">
 
     <Label styleClass="title-label" text="Customer Order Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

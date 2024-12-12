@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="503.0" prefWidth="652.0" styleClass="feed-distribution-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FeedDistributionController">
+<AnchorPane prefHeight="503.0" prefWidth="652.0" styleClass="feed-distribution-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FeedDistributionController">
 
     <Label styleClass="title-label" text="Feed Distribution Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

@@ -8,15 +8,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="530.0" prefWidth="585.0" styleClass="fish-stock-records-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FishStockRecordsController">
+<fx:root prefHeight="530.0" prefWidth="585.0" styleClass="fish-stock-records-pane" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FishStockRecordsController">
 
-    <Label styleClass="title-label" text="Fish Stock Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
+    <Label layoutX="189.0" layoutY="23.0" styleClass="title-label" text="Fish Stock Management" AnchorPane.leftAnchor="189.0" AnchorPane.topAnchor="23.0">
         <font>
             <Font name="Arial Bold" size="18" />
         </font>
     </Label>
 
-    <TableView fx:id="stockTable" prefHeight="200" prefWidth="411.0" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70">
+    <TableView fx:id="stockTable" layoutX="87.0" layoutY="65.0" prefHeight="200" prefWidth="411.0" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="65.0">
         <columns>
             <TableColumn fx:id="speciesColumn" prefWidth="113.0" text="Species" />
             <TableColumn fx:id="tankColumn" prefWidth="137.0" text="Tank" />
@@ -31,4 +31,4 @@
     <TextField fx:id="mortalityRateField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="360" />
 
     <Button fx:id="generateReportBtn" onAction="#handleGenerateReport" prefWidth="250" text="Generate Stock Report" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="400" />
-</AnchorPane>
+</fx:root>

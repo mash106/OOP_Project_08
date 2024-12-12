@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="554.0" prefWidth="519.0" styleClass="fish-transportation-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FishTransportationController">
+<AnchorPane prefHeight="554.0" prefWidth="519.0" styleClass="fish-transportation-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FishTransportationController">
 
     <Label styleClass="title-label" text="Fish Logistics" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

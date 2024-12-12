@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="561.0" prefWidth="745.0" styleClass="brand-awareness-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrandAwarenessController">
+<AnchorPane prefHeight="561.0" prefWidth="745.0" styleClass="brand-awareness-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.BrandAwarenessController">
 
     <Label styleClass="title-label" text="Brand Awareness Campaign" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

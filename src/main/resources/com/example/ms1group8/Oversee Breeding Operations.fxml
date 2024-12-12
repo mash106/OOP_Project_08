@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="535.0" prefWidth="522.0" styleClass="breeding-operations-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BreedingOperationsController">
+<AnchorPane prefHeight="535.0" prefWidth="522.0" styleClass="breeding-operations-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.BreedingOperationsController">
 
     <Label styleClass="title-label" text="Breeding Dashboard" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

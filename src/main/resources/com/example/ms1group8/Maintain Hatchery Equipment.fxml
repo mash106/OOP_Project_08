@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="618.0" prefWidth="585.0" styleClass="equipment-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EquipmentManagementController">
+<AnchorPane prefHeight="618.0" prefWidth="585.0" styleClass="equipment-management-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.EquipmentManagementController">
 
     <Label styleClass="title-label" text="Equipment Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>

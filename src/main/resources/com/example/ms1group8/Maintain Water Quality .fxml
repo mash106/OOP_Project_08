@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="505.0" prefWidth="670.0" styleClass="water-quality-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WaterQualityController">
+<AnchorPane prefHeight="505.0" prefWidth="670.0" styleClass="water-quality-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.WaterQualityController">
 
     <Label styleClass="title-label" text="Water Quality Monitoring" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
         <font>
