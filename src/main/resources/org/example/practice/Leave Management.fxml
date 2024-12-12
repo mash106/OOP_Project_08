@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="695.0" prefWidth="615.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.fishhatchery.hr.LeaveManagementController">
+<AnchorPane prefHeight="695.0" prefWidth="615.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.practice.LeaveManagementController">
     <ComboBox fx:id="employeeComboBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
 
     <TableView fx:id="leaveTableView" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
