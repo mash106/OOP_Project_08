@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Mahir_2211582.TrackCostSceneController">
+
+    <Label layoutX="50.0" layoutY="30.0" style="-fx-font-size: 24px; -fx-text-fill: #2C3E50;" text="Inventory Cost Tracking" />
+
+    <Label fx:id="totalInventoryValueLabel" layoutX="50.0" layoutY="90.0" style="-fx-font-size: 18px;" />
+
+
+    <Button layoutX="50.0" layoutY="500.0" onAction="#costBreakdownButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Detailed Cost Breakdown" />
+   <PieChart fx:id="costTrackingPieChart" layoutX="180.0" layoutY="81.0" />
+
+</AnchorPane>

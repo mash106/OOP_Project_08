@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Mahir_2211582.ProductDetailSceneController">
+    <Label layoutX="50.0" layoutY="30.0" style="-fx-font-size: 24px; -fx-text-fill: #1E4E8C;" text="Product Details" />
+
+    <ImageView fx:id="productImage" fitHeight="250.0" fitWidth="350.0" layoutX="50.0" layoutY="100.0" preserveRatio="true" />
+
+    <Label fx:id="productNameLabel" layoutX="450.0" layoutY="100.0" style="-fx-font-size: 18px;" />
+
+    <Label fx:id="priceLabel" layoutX="450.0" layoutY="150.0" style="-fx-font-size: 16px;" />
+
+    <Label fx:id="availabilityLabel" layoutX="450.0" layoutY="200.0" style="-fx-font-size: 16px;" />
+
+    <Button layoutX="450.0" layoutY="250.0" onAction="#addToCartButtonOnClicked" style="-fx-background-color: #e74c3c;                -fx-text-fill: white;                -fx-background-radius: 5;                -fx-padding: 10 20;" text="Add to Cart" />
+
+</AnchorPane>
