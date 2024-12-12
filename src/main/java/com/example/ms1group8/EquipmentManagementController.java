@@ -33,12 +33,10 @@ public class EquipmentManagementController {
 
     @FXML
     public void initialize() {
-        // Initialize the columns of the equipment table
         equipmentColumn.setCellValueFactory(cellData -> cellData.getValue().equipmentNameProperty());
         statusColumn.setCellValueFactory(cellData -> cellData.getValue().statusProperty());
         lastMaintainedColumn.setCellValueFactory(cellData -> cellData.getValue().lastMaintainedProperty());
 
-        // Add some sample equipment for demonstration
         equipmentList.add(new Equipment("Generator", "Operational", "2024-01-15"));
         equipmentList.add(new Equipment("Air Compressor", "Under Maintenance", "2024-03-10"));
         equipmentList.add(new Equipment("Forklift", "Operational", "2024-02-05"));
@@ -51,12 +49,10 @@ public class EquipmentManagementController {
 
     @FXML
     public void handleScheduleMaintenance(ActionEvent actionEvent) {
-        // Handle scheduling maintenance
         Equipment selectedEquipment = equipmentTable.getSelectionModel().getSelectedItem();
         if (selectedEquipment == null) {
             showAlert("No Equipment Selected", "Please select an equipment item to schedule maintenance.");
         } else {
-            // Update the status to "Under Maintenance" and set the last maintenance date
             selectedEquipment.setStatus("Under Maintenance");
             selectedEquipment.setLastMaintained("Scheduled for " + getCurrentDate());
             showAlert("Maintenance Scheduled", "Maintenance has been scheduled for " + selectedEquipment.getEquipmentName() + ".");
@@ -65,7 +61,6 @@ public class EquipmentManagementController {
 
     @FXML
     public void handleLogMalfunction(ActionEvent actionEvent) {
-        // Handle logging equipment malfunction
         Equipment selectedEquipment = equipmentTable.getSelectionModel().getSelectedItem();
         String malfunctionNotes = malfunctionNotesArea.getText();
         if (selectedEquipment == null) {
@@ -73,14 +68,12 @@ public class EquipmentManagementController {
         } else if (malfunctionNotes.isEmpty()) {
             showAlert("Malfunction Notes Missing", "Please enter malfunction details.");
         } else {
-            // Update the equipment status to "Malfunctioning"
             selectedEquipment.setStatus("Malfunctioning");
             showAlert("Malfunction Logged", "Malfunction for " + selectedEquipment.getEquipmentName() + " has been logged.");
         }
     }
 
     private String getCurrentDate() {
-        // This method can be used to get the current system date (you can use any date format here)
         return java.time.LocalDate.now().toString();
     }
 
@@ -92,7 +85,6 @@ public class EquipmentManagementController {
         alert.showAndWait();
     }
 
-    // Equipment class to represent equipment data
     public static class Equipment {
         private final StringProperty equipmentName;
         private final StringProperty status;

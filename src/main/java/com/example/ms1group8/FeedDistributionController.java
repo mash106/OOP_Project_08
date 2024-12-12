@@ -25,17 +25,14 @@ public class FeedDistributionController {
 
     @FXML
     public void initialize() {
-        // Set the available tank numbers and feed types
         tankNumberComboBox.setItems(tankNumbers);
         feedTypeComboBox.setItems(feedTypes);
 
-        // Set the current inventory field
         updateInventoryField();
     }
 
     @FXML
     public void handleUpdateInventory(ActionEvent event) {
-        // Handle the update inventory action
         try {
             String selectedTank = tankNumberComboBox.getSelectionModel().getSelectedItem();
             String selectedFeed = feedTypeComboBox.getSelectionModel().getSelectedItem();
@@ -51,14 +48,12 @@ public class FeedDistributionController {
                 return;
             }
 
-            // Parse the feed quantity
             int feedQuantity = Integer.parseInt(feedQuantityText);
             if (feedQuantity <= 0) {
                 showAlert("Error", "Feed quantity must be a positive number.");
                 return;
             }
 
-            // Update the inventory (subtract the feed quantity from the current inventory)
             if (feedQuantity > currentInventory) {
                 showAlert("Error", "Insufficient inventory to fulfill this order.");
                 return;
@@ -67,7 +62,6 @@ public class FeedDistributionController {
             currentInventory -= feedQuantity;
             updateInventoryField();
 
-            // Display confirmation message
             showAlert("Success", "Feed distribution updated successfully for " + selectedTank + " using " + selectedFeed + " feed type.");
 
         } catch (NumberFormatException e) {
@@ -76,12 +70,10 @@ public class FeedDistributionController {
     }
 
     private void updateInventoryField() {
-        // Update the current inventory field with the current inventory level
         currentInventoryField.setText(String.valueOf(currentInventory));
     }
 
     private void showAlert(String title, String message) {
-        // Show an alert with the specified title and message
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText(null);

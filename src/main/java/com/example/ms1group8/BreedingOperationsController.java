@@ -25,7 +25,7 @@ public class BreedingOperationsController {
 
     @FXML
     public void initialize() {
-        // Adding sample broodstock species to the ComboBox
+
         broodstockSpeciesComboBox.getItems().addAll(
                 "Tilapia",
                 "Catfish",
@@ -34,7 +34,7 @@ public class BreedingOperationsController {
                 "Bass"
         );
 
-        // Add event listener to the ComboBox to update broodstock info
+
         broodstockSpeciesComboBox.setOnAction(this::updateBroodstockInfo);
     }
 
@@ -74,7 +74,7 @@ public class BreedingOperationsController {
         if (selectedSpecies == null) {
             showAlert("No Species Selected", "Please select a broodstock species before managing egg collection.");
         } else {
-            // Code to handle egg collection based on the selected species and provided genetic notes
+
             showAlert("Egg Collection Managed", "Egg collection for " + selectedSpecies + " has been managed. Notes: " + geneticNotes);
         }
     }
@@ -86,7 +86,6 @@ public class BreedingOperationsController {
         if (selectedSpecies == null) {
             showAlert("No Species Selected", "Please select a broodstock species before transferring fingerlings.");
         } else {
-            // Code to handle fingerlings transfer based on the selected species
             showAlert("Fingerlings Transferred", "Fingerlings for " + selectedSpecies + " have been transferred.");
         }
     }

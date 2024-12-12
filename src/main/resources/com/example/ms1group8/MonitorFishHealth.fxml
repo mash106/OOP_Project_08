@@ -29,5 +29,5 @@
     <Label text="Appetite:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="370" />
     <ComboBox fx:id="appetiteComboBox" prefWidth="250" promptText="Select Appetite Level" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="390" />
 
-    <Button fx:id="submitHealthAssessmentBtn" onAction="# handleSubmitHealthAssessment" prefWidth="250" text="Submit Health Assessment" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="430" />
+    <Button fx:id="submitHealthAssessmentBtn" onAction="#handleSubmitHealthAssessment" prefWidth="250" text="Submit Health Assessment" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="430" />
 </AnchorPane>

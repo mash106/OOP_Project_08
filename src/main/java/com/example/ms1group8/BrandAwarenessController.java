@@ -23,7 +23,7 @@ public class BrandAwarenessController {
 
     @FXML
     public void initialize() {
-        // Initialize ComboBox if needed, though it's already populated in FXML
+
     }
 
     @FXML
@@ -35,7 +35,7 @@ public class BrandAwarenessController {
         if (selectedChannel == null || campaignConcept.isEmpty()) {
             showAlert("Incomplete Data", "Please fill in all fields before publishing the campaign.");
         } else {
-            // Code to publish the campaign using the provided data
+
             engagementMetricsField.setText(engagementMetrics);
             showAlert("Campaign Published", "The campaign has been published successfully on " + selectedChannel + ".");
         }
@@ -48,7 +48,7 @@ public class BrandAwarenessController {
         if (campaignConcept.isEmpty()) {
             showAlert("No Campaign Concept", "Please provide a campaign concept before developing assets.");
         } else {
-            // Code to develop assets based on the campaign concept
+
             showAlert("Assets Developed", "Assets have been developed for the campaign.");
         }
     }
