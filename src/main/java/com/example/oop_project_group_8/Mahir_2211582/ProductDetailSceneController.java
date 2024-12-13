@@ -1,25 +1,33 @@
 package com.example.oop_project_group_8.Mahir_2211582;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 
-public class ProductDetailSceneController
-{
-    @javafx.fxml.FXML
-    private ImageView productImage;
-    @javafx.fxml.FXML
-    private Label availabilityLabel;
-    @javafx.fxml.FXML
+public class ProductDetailSceneController {
+
+    @FXML
     private Label productNameLabel;
-    @javafx.fxml.FXML
+
+    @FXML
+    private Label speciesLabel;
+
+    @FXML
+    private Label productDetailsLabel;
+
+    @FXML
     private Label priceLabel;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    public void setProduct(BrowseProductSceneController.Product product) {
+        if (product != null) {
+            productNameLabel.setText(product.getProductName());
+            speciesLabel.setText(product.getSpecies());
+            productDetailsLabel.setText(product.getProductDetails());
+            priceLabel.setText(String.format("BDT %.2f", product.getPrice()));
+        }
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void addToCartButtonOnClicked(ActionEvent actionEvent) {
     }
 }

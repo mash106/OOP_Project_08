@@ -2,20 +2,27 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Mahir_2211582.ProductDetailSceneController">
-    <Label layoutX="50.0" layoutY="30.0" style="-fx-font-size: 24px; -fx-text-fill: #1E4E8C;" text="Product Details" />
+<AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Mahir_2211582.ProductDetailSceneController">
 
-    <ImageView fx:id="productImage" fitHeight="250.0" fitWidth="350.0" layoutX="50.0" layoutY="100.0" preserveRatio="true" />
+    <!-- Product Name -->
+    <Label layoutX="50.0" layoutY="50.0" style="-fx-text-fill: white; -fx-font-size: 16;" text="Product Name:" />
+    <Label fx:id="productNameLabel" layoutX="200.0" layoutY="50.0" style="-fx-text-fill: white; -fx-font-size: 16;" />
 
-    <Label fx:id="productNameLabel" layoutX="450.0" layoutY="100.0" style="-fx-font-size: 18px;" />
+    <!-- Species -->
+    <Label layoutX="50.0" layoutY="100.0" style="-fx-text-fill: white; -fx-font-size: 16;" text="Species:" />
+    <Label fx:id="speciesLabel" layoutX="200.0" layoutY="100.0" style="-fx-text-fill: white; -fx-font-size: 16;" />
 
-    <Label fx:id="priceLabel" layoutX="450.0" layoutY="150.0" style="-fx-font-size: 16px;" />
+    <!-- Product Details -->
+    <Label layoutX="50.0" layoutY="150.0" style="-fx-text-fill: white; -fx-font-size: 16;" text="Product Details:" />
+    <Label fx:id="productDetailsLabel" layoutX="200.0" layoutY="150.0" style="-fx-text-fill: white; -fx-font-size: 16;" />
 
-    <Label fx:id="availabilityLabel" layoutX="450.0" layoutY="200.0" style="-fx-font-size: 16px;" />
+    <!-- Price -->
+    <Label layoutX="50.0" layoutY="200.0" style="-fx-text-fill: white; -fx-font-size: 16;" text="Price (BDT):" />
+    <Label fx:id="priceLabel" layoutX="200.0" layoutY="200.0" style="-fx-text-fill: white; -fx-font-size: 16;" />
 
-    <Button layoutX="450.0" layoutY="250.0" onAction="#addToCartButtonOnClicked" style="-fx-background-color: #e74c3c;                -fx-text-fill: white;                -fx-background-radius: 5;                -fx-padding: 10 20;" text="Add to Cart" />
+    <!-- Add to Cart Button -->
+    <Button layoutX="350.0" layoutY="300.0" onAction="#addToCartButtonOnClicked" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Add to Cart" />
 
 </AnchorPane>
