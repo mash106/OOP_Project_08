@@ -28,10 +28,11 @@ public class BreedingOperationsController {
 
         broodstockSpeciesComboBox.getItems().addAll(
                 "Tilapia",
-                "Catfish",
-                "Salmon",
-                "Trout",
-                "Bass"
+                "Ruhu",
+                "Carp",
+                "Pangasius",
+                "Catla",
+                "Grass Carp"
         );
 
 
@@ -46,19 +47,19 @@ public class BreedingOperationsController {
                     broodstockHealthField.setText("Healthy");
                     spawningCycleField.setText("Monthly");
                     break;
-                case "Catfish":
+                case "Ruhu":
                     broodstockHealthField.setText("Good");
                     spawningCycleField.setText("Bi-Monthly");
                     break;
-                case "Salmon":
+                case "Pangasius":
                     broodstockHealthField.setText("Excellent");
                     spawningCycleField.setText("Yearly");
                     break;
-                case "Trout":
+                case "Catla":
                     broodstockHealthField.setText("Fair");
                     spawningCycleField.setText("Seasonal");
                     break;
-                case "Bass":
+                case "Grass Carp":
                     broodstockHealthField.setText("Good");
                     spawningCycleField.setText("Quarterly");
                     break;
