@@ -82,7 +82,7 @@ public class TrackingOrderSceneController {
 
     private void showOrderDetails(Order order) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/OrderDetailScene.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/OrderDetailScene.fxml"));
             Parent root = loader.load();
 
             OrderDetailSceneController controller = loader.getController();

@@ -9,7 +9,6 @@ public class Order {
     private String shipmentStatus;
     private String shipmentDetails;
 
-    // Constructor
     public Order(String orderId, String datePlaced, String timePlaced, double totalAmount, String paymentStatus, String shipmentStatus, String shipmentDetails) {
         this.orderId = orderId;
         this.datePlaced = datePlaced;
@@ -20,7 +19,6 @@ public class Order {
         this.shipmentDetails = shipmentDetails;
     }
 
-    // Getters and Setters
     public String getOrderId() {
         return orderId;
     }
@@ -75,5 +73,18 @@ public class Order {
 
     public void setShipmentDetails(String shipmentDetails) {
         this.shipmentDetails = shipmentDetails;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderId='" + orderId + '\'' +
+                ", datePlaced='" + datePlaced + '\'' +
+                ", timePlaced='" + timePlaced + '\'' +
+                ", totalAmount=" + totalAmount +
+                ", paymentStatus='" + paymentStatus + '\'' +
+                ", shipmentStatus='" + shipmentStatus + '\'' +
+                ", shipmentDetails='" + shipmentDetails + '\'' +
+                '}';
     }
 }
