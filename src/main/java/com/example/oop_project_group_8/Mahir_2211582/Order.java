@@ -10,7 +10,7 @@ public class Order {
     private String shipmentDetails;
 
     // Constructor
-    public Order(String orderId, String datePlaced, String timePlaced, float totalAmount, String paymentStatus, String shipmentStatus, String shipmentDetails) {
+    public Order(String orderId, String datePlaced, String timePlaced, double totalAmount, String paymentStatus, String shipmentStatus, String shipmentDetails) {
         this.orderId = orderId;
         this.datePlaced = datePlaced;
         this.timePlaced = timePlaced;
