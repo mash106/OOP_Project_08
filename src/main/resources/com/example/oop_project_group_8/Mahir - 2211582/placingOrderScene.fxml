@@ -27,5 +27,6 @@
     <ComboBox fx:id="paymentMethodComboBox" layoutX="50.0" layoutY="420.0" prefWidth="300.0" promptText="Payment Method" />
 
     <Button layoutX="50.0" layoutY="500.0" onAction="#placeOrderButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Place Order" />
+   <TextField fx:id="cardNumberTF" layoutX="400.0" layoutY="420.0" prefHeight="25.0" prefWidth="350.0" promptText="Card Number" />
 
 </AnchorPane>
