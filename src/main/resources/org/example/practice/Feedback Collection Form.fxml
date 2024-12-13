@@ -6,12 +6,12 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="FeedbackController">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.practice.FeedbackController">
     <Label text="Overall Satisfaction" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
 
     <Slider fx:id="satisfactionSlider" max="10" min="0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
 
     <TextArea fx:id="feedbackArea" promptText="Please provide your detailed feedback" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0" />
 
-    <Button fx:id="submitFeedbackButton" text="Submit Feedback" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+    <Button fx:id="submitFeedbackButton" text="Submit Feedback" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" onAction="#submitFeedback" />
 </AnchorPane>

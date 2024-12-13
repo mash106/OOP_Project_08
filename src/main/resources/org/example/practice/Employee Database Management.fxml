@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="644.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmployeeDatabaseController">
+<AnchorPane prefHeight="644.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.EmployeeDatabaseController">
     <TableView fx:id="employeeTableView" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
         <columns>
             <TableColumn fx:id="idColumn" text="Employee ID" />
@@ -14,9 +14,9 @@
         </columns>
     </TableView>
 
-    <Button fx:id="addEmployeeButton" text="Add New Employee" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" />
+    <Button fx:id="addEmployeeButton" text="Add New Employee" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" onAction="#addEmployee" />
 
-    <Button fx:id="editEmployeeButton" text="Edit Employee" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="200.0" />
+    <Button fx:id="editEmployeeButton" text="Edit Employee" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="200.0" onAction="#editEmployee" />
 
-    <Button fx:id="deleteEmployeeButton" text="Delete Employee" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+    <Button fx:id="deleteEmployeeButton" text="Delete Employee" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" onAction="#deleteEmployee" />
 </AnchorPane>

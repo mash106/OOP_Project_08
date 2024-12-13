@@ -2,23 +2,31 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="668.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BenefitsAdministrationController">
-    <ComboBox fx:id="employeeComboBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+<AnchorPane prefHeight="668.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.BenefitsAdministrationController">
+    <ComboBox fx:id="employeeComboBox" layoutX="173.0" layoutY="129.0" prefHeight="25.0" prefWidth="209.0" AnchorPane.leftAnchor="173.0" AnchorPane.topAnchor="129.0" />
 
-    <TableView fx:id="benefitsTableView" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+    <TableView fx:id="benefitsTableView" layoutY="211.0" prefHeight="357.0" prefWidth="760.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="211.0">
         <columns>
-            <TableColumn fx:id="benefitTypeColumn" text="Benefit Type" />
-            <TableColumn fx:id="coverageColumn" text="Coverage" />
-            <TableColumn fx:id="startDateColumn" text="Start Date" />
-            <TableColumn fx:id="endDateColumn" text="End Date" />
+            <TableColumn fx:id="benefitTypeColumn" prefWidth="160.0" text="Benefit Type" />
+            <TableColumn fx:id="coverageColumn" minWidth="0.0" prefWidth="180.0" text="Coverage" />
+            <TableColumn fx:id="startDateColumn" prefWidth="248.0" text="Start Date" />
+            <TableColumn fx:id="endDateColumn" prefWidth="171.0" text="End Date" />
         </columns>
     </TableView>
 
-    <Button fx:id="addBenefitsButton" text="Add Benefits" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" />
+    <Button onAction="#addBenefitsButton" prefWidth="120.0" text="Add Benefits" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" />
 
-    <Button fx:id="updateBenefitsButton" text="Update Benefits" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+    <Button onAction="#updateBenefitsButton" prefWidth="120.0" text="Update Benefits" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+   <Label layoutX="36.0" layoutY="133.0" prefHeight="17.0" prefWidth="113.0" text="Select your name " />
+   <Label layoutX="288.0" layoutY="50.0" prefHeight="17.0" prefWidth="241.0" text="Benefits Administration">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
 </AnchorPane>

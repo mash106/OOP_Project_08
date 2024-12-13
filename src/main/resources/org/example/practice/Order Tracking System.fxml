@@ -8,8 +8,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="706.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OrderTrackingController">
+<AnchorPane prefHeight="706.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.OrderTrackingController">
+
     <TextField fx:id="orderNumberField" promptText="Enter Order Number" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+
 
     <TableView fx:id="orderDetailsTable" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
         <columns>
@@ -18,9 +20,12 @@
         </columns>
     </TableView>
 
+
     <ComboBox fx:id="orderStatusComboBox" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="20.0" />
+
 
     <TextArea fx:id="updateNotesArea" promptText="Update Notes" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
 
-    <Button fx:id="updateOrderButton" text="Update Order" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+
+    <Button fx:id="updateOrderButton" text="Update Order" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" onAction="#handleUpdateOrder" />
 </AnchorPane>

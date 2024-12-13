@@ -19,5 +19,5 @@
         </columns>
     </TableView>
 
-    <Button fx:id="processPayrollButton" text="Process Payroll" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+    <Button fx:id="processPayrollButton" text="Process Payroll" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" onAction="#handleProcessPayroll" />
 </AnchorPane>

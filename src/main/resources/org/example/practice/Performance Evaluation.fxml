@@ -2,9 +2,8 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.PerformanceEvaluationController">
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.PerformanceEvaluationController">
     <Label text="Performance Evaluation"
            AnchorPane.leftAnchor="20"
            AnchorPane.topAnchor="20"
@@ -22,13 +21,15 @@
               AnchorPane.bottomAnchor="100"
               promptText="Enter Evaluation Details"/>
 
-    <Button text="Save Evaluation"
+    <Button fx:id="saveEvaluationButton"
+            text="Save Evaluation"
             AnchorPane.leftAnchor="20"
             AnchorPane.bottomAnchor="20"
-    />
+            onAction="#handleSaveEvaluation"/>
 
-    <Button text="Archive Evaluation"
+    <Button fx:id="archiveEvaluationButton"
+            text="Archive Evaluation"
             AnchorPane.leftAnchor="200"
             AnchorPane.bottomAnchor="20"
-    />
+            onAction="#handleArchiveEvaluation"/>
 </AnchorPane>

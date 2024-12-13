@@ -6,14 +6,28 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="509.0" prefWidth="597.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.practice.AppointmentController">
-    <ComboBox fx:id="serviceComboBox" promptText="Select Service" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1"
+            fx:controller="org.example.practice.AppointmentController"
+            prefHeight="400.0" prefWidth="600.0">
 
-    <DatePicker fx:id="appointmentDatePicker" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="80.0" />
+    <ComboBox fx:id="serviceComboBox" promptText="Select Service"
+              AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0"
+              prefWidth="300.0" />
 
-    <ComboBox fx:id="timeSlotComboBox" promptText="Select Time Slot" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0" />
+    <DatePicker fx:id="appointmentDatePicker"
+                AnchorPane.topAnchor="80.0" AnchorPane.leftAnchor="20.0"
+                prefWidth="300.0" />
 
-    <Label fx:id="confirmationLabel" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" />
+    <ComboBox fx:id="timeSlotComboBox" promptText="Select Time Slot"
+              AnchorPane.topAnchor="140.0" AnchorPane.leftAnchor="20.0"
+              prefWidth="300.0" />
 
-    <Button fx:id="scheduleAppointmentButton" text="Schedule Appointment" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+    <Label fx:id="confirmationLabel" text="Schedule your appointment"
+           AnchorPane.leftAnchor="20.0" AnchorPane.bottomAnchor="100.0"
+           style="-fx-text-fill: black; -fx-font-size: 14;" />
+
+    <Button fx:id="scheduleAppointmentButton" text="Schedule Appointment"
+            AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="50.0"
+            prefWidth="150.0" />
+
 </AnchorPane>

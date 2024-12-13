@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="694.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProductInfoController">
-    <TextField fx:id="productSearchField" promptText="Enter Product Name or ID" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+<AnchorPane prefHeight="511.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.ProductInfoController">
+    <TextField fx:id="productNameField" promptText="Product Name" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
 
-    <TableView fx:id="productDetailsTable" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
-        <columns>
-            <TableColumn fx:id="attributeColumn" text="Attribute" />
-            <TableColumn fx:id="valueColumn" text="Value" />
-        </columns>
-    </TableView>
+    <TextField fx:id="productCodeField" promptText="Product Code" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="80.0" />
 
-    <TextArea fx:id="additionalInfoArea" promptText="Request Additional Information" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+    <Label fx:id="productDetailsLabel" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0" />
 
-    <Button fx:id="requestInfoButton" text="Request Info" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+    <Button fx:id="fetchProductButton" text="Fetch Product Details" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
 </AnchorPane>
