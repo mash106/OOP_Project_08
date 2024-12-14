@@ -46,9 +46,6 @@ public class SalesReportController {
         reportTypeComboBox.getSelectionModel().selectFirst();  // Set default selection to "Monthly Sales"
     }
 
-    /**
-     * Handle the action when the "Generate Report" button is clicked.
-     */
     @FXML
     private void handleGenerateReport() {
         String selectedReportType = reportTypeComboBox.getValue();
@@ -72,11 +69,7 @@ public class SalesReportController {
                         selectedReportType, startDate, endDate));
     }
 
-    /**
-     * Generate a pie chart based on the selected report type.
-     *
-     * @param reportType The selected report type (Monthly, Quarterly, or Annual)
-     */
+
     private void generatePieChart(String reportType) {
         PieChart.Data[] reportData;
 
@@ -123,17 +116,13 @@ public class SalesReportController {
         }
     }
 
-    /**
-     * Handle the action when the "Export as PDF" button is clicked.
-     */
+
     @FXML
     private void handleExportPDF() {
         showAlert(AlertType.INFORMATION, "Exported to PDF", "The report has been exported as PDF.");
     }
 
-    /**
-     * Handle the action when the "Back" button is clicked.
-     */
+
     @FXML
     private void handleBackButton(ActionEvent event) {
         try {
@@ -147,13 +136,7 @@ public class SalesReportController {
         }
     }
 
-    /**
-     * Helper method to show alert messages.
-     *
-     * @param alertType The type of alert (ERROR, INFORMATION, etc.)
-     * @param title     The title of the alert
-     * @param message   The message content of the alert
-     */
+
     private void showAlert(AlertType alertType, String title, String message) {
         Alert alert = new Alert(alertType);
         alert.setTitle(title);
