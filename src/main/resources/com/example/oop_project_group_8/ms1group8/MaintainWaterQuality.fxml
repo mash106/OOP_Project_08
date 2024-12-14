@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="670.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="water-quality-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.ms1group8.WaterQualityController">
+
+    <Label styleClass="title-label" text="Water Quality Monitoring" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
+        <font>
+            <Font name="Arial Bold" size="18" />
+        </font>
+    </Label>
+
+    <ComboBox fx:id="tankSelectionComboBox" prefWidth="250" promptText="Select Tank" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70" />
+
+    <Label text="pH Level:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
+    <TextField fx:id="phLevelField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="140" />
+
+    <Label text="Temperature (°C):" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="180" />
+    <TextField fx:id="temperatureField" editable="false" prefHeight="25.0" prefWidth="250.0" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="200" />
+
+    <Label text="Oxygen Levels:" textFill="#e8e8e8" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="240" />
+    <TextField fx:id="oxygenLevelsField" editable="false" prefWidth="250.0" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="260" />
+
+    <Button fx:id="waterTreatmentBtn" onAction="#handleWaterTreatment" prefWidth="250" text="Initiate Water Treatment" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="310" />
+
+    <TextArea fx:id="treatmentNotesArea" prefHeight="100" prefWidth="250" promptText="Water Quality Remediation Notes" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="360" />
+
+    <Button layoutX="20.0" layoutY="470.0" onAction="#handleBack" prefWidth="250" text="Back" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="470" />
+</AnchorPane>

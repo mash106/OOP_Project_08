@@ -1,4 +1,4 @@
-package com.example.oop_project_group_8;
+package com.example.oop_project_group_8.ms1group8;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,9 +10,9 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ms1group8/HatcheryTechnician.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MarketingCampaigns.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Marketing Campaigns");
         stage.setScene(scene);
         stage.show();
     }
