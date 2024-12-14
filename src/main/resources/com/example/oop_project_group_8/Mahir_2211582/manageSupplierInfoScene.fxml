@@ -27,5 +27,6 @@
    <ComboBox fx:id="productSuppliedCB" layoutX="116.0" layoutY="541.0" prefWidth="150.0" />
    <Button fx:id="addNewS" layoutX="486.0" layoutY="464.0" onAction="#addNewSupplierButtonOnClicked" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Add New Supplier" />
    <Button layoutX="486.0" layoutY="562.0" onAction="#updateSupplierTableButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Update Supplier Table" />
+   <Button layoutX="750.0" layoutY="498.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Back" />
 
 </AnchorPane>

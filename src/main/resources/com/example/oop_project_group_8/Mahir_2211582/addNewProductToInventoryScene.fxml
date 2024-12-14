@@ -21,4 +21,5 @@
     <TextArea fx:id="descriptionArea" layoutX="50.0" layoutY="310.0" prefHeight="150.0" prefWidth="700.0" promptText="Item Description" />
 
     <Button layoutX="50.0" layoutY="480.0" onAction="#addItemToInventoryButtonOnAction" styleClass="inventory-button" text="Add Item to Inventory" />
+   <Button layoutX="709.0" layoutY="480.0" onAction="#backButtonOnClicked" styleClass="inventory-button" text="Back" />
 </AnchorPane>

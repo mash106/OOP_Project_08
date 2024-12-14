@@ -68,4 +68,8 @@ public class TrackCostSceneController {
     private boolean isWithinDateRange(Item item, LocalDate startDate, LocalDate endDate) {
         return true;
     }
+
+    @FXML
+    public void backButtonOnClicked(ActionEvent actionEvent) {
+    }
 }

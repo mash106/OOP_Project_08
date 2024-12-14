@@ -22,5 +22,6 @@
     <ComboBox fx:id="selectSupplierComboBox" layoutX="50.0" layoutY="470.0" prefWidth="350.0" promptText="Select Supplier" />
 
     <Button layoutX="50.0" layoutY="500.0" onAction="#placeRestockOrderButtonOnAction" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Place Restock Order" />
+   <Button layoutX="627.0" layoutY="500.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Place Restock Order" />
 
 </AnchorPane>

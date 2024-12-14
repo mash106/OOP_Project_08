@@ -18,11 +18,12 @@
     <DatePicker fx:id="endDatePicker" layoutX="400.0" layoutY="145.0" />
 
     <Label layoutX="50.0" layoutY="210.0" style="-fx-font-size: 16px; -fx-text-fill: #ffffff;" text="Select Category:" />
-    <ComboBox fx:id="categoryComboBox" layoutX="200.0" layoutY="205.0" />
+    <ComboBox fx:id="categoryComboBox" layoutX="200.0" layoutY="205.0" prefHeight="25.0" prefWidth="174.0" />
 
     <Button layoutX="200.0" layoutY="500.0" onAction="#generateCostPieChartButtonOnClicked" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Generate Cost Pie Chart" />
 
     <Button layoutX="400.0" layoutY="500.0" onAction="#costBreakdownButtonOnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Detailed Cost Breakdown" />
 
     <PieChart fx:id="costTrackingPieChart" layoutX="180.0" layoutY="250.0" prefHeight="200.0" prefWidth="500.0" />
+   <Button layoutX="602.0" layoutY="500.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Back" />
 </AnchorPane>

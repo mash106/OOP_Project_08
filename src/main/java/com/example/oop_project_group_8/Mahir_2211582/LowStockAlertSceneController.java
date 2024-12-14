@@ -25,4 +25,8 @@ public class LowStockAlertSceneController
     @javafx.fxml.FXML
     public void restockButtonOnClicked(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void backButtonOnClicked(ActionEvent actionEvent) {
+    }
 }

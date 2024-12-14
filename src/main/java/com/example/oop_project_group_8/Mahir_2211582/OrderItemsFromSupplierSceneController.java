@@ -23,7 +23,6 @@ public class OrderItemsFromSupplierSceneController {
     @javafx.fxml.FXML
     private ComboBox<String> selectSupplierComboBox;
 
-    // Shared inventory list
     private ObservableList<Item> inventoryList;
 
     @javafx.fxml.FXML

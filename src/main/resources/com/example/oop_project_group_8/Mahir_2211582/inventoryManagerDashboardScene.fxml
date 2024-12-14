@@ -23,7 +23,7 @@
 
     <Button layoutX="132.0" layoutY="278.0" onAction="#updateItemsButtonOnClickedDB" prefHeight="37.0" prefWidth="185.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Update Existing Items" />
 
-    <Button layoutX="132.0" layoutY="358.0" onAction="#reorderButtonOnClickedDB" prefHeight="37.0" prefWidth="185.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Order from Suppliers" />
+    <Button layoutX="132.0" layoutY="358.0" onAction="#orderFromSuppliersButtonOnClickedDB" prefHeight="37.0" prefWidth="185.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Order from Suppliers" />
 
 
     <Button layoutX="532.0" layoutY="118.0" onAction="#createReportButtonOnClickedDB" prefHeight="37.0" prefWidth="196.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Create Inventory Reports" />

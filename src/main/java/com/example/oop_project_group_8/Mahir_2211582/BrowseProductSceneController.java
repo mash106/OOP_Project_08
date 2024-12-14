@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
@@ -82,7 +83,7 @@ public class BrowseProductSceneController {
 
         if (selectedProduct != null) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/productDetailScene.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("productDetailScene.fxml"));
                 Parent root = loader.load();
 
                 ProductDetailSceneController controller = loader.getController();
@@ -112,6 +113,19 @@ public class BrowseProductSceneController {
                 }
             }
             productCatalogTable.setItems(filteredList);
+        }
+    }
+
+    @FXML
+    public void backButtonOnAction(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("customerDashboardScene.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

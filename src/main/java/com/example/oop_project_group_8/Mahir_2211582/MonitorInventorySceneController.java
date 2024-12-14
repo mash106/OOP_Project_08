@@ -2,6 +2,7 @@ package com.example.oop_project_group_8.Mahir_2211582;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
@@ -14,10 +15,6 @@ public class MonitorInventorySceneController {
     @FXML
     private TableColumn<Item, String> inventoryNameTC;
     @FXML
-    private TableColumn<Item, String> inventoryCategoryTC;
-    @FXML
-    private TableColumn<Item, String> inventoryDescriptionTC;
-    @FXML
     private TableColumn<Item, Double> inventoryPriceTC;
     @FXML
     private TableColumn<Item, Integer> inventoryQuantityTC;
@@ -25,12 +22,12 @@ public class MonitorInventorySceneController {
     private ComboBox<String> inventorySortComboBox;
 
     private final ObservableList<Item> inventoryList = FXCollections.observableArrayList();
+    @FXML
+    private TableColumn inventoryItemIdTC;
 
     @FXML
     public void initialize() {
         inventoryNameTC.setCellValueFactory(new PropertyValueFactory<>("itemName"));
-        inventoryCategoryTC.setCellValueFactory(new PropertyValueFactory<>("category"));
-        inventoryDescriptionTC.setCellValueFactory(new PropertyValueFactory<>("description"));
         inventoryPriceTC.setCellValueFactory(new PropertyValueFactory<>("price"));
         inventoryQuantityTC.setCellValueFactory(new PropertyValueFactory<>("quantity"));
         addSampleData();
@@ -78,5 +75,9 @@ public class MonitorInventorySceneController {
 
     public ObservableList<Item> getInventoryList() {
         return inventoryList;
+    }
+
+    @FXML
+    public void backButtonOnClicked(ActionEvent actionEvent) {
     }
 }

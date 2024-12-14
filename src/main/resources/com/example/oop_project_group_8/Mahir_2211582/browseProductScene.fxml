@@ -22,5 +22,6 @@
     </TableView>
 
     <Button layoutX="50.0" layoutY="560.0" onAction="#viewProductDetailsButtonOnAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="View Product Details" />
+   <Button layoutX="260.0" layoutY="562.0" onAction="#backButtonOnAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Back" />
 
 </AnchorPane>

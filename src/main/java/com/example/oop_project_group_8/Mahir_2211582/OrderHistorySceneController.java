@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
@@ -55,11 +56,10 @@ public class OrderHistorySceneController {
 
         if (selectedOrder != null) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/invoiceScene.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("invoiceScene.fxml"));
                 Parent root = loader.load();
 
                 InvoiceSceneController invoiceController = loader.getController();
-                invoiceController.setOrder(selectedOrder);
 
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
@@ -71,6 +71,19 @@ public class OrderHistorySceneController {
             }
         } else {
             System.out.println("Please select an order to view the invoice.");
+        }
+    }
+
+    @FXML
+    public void backButtonOnClicked(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("customerDashboardScene.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

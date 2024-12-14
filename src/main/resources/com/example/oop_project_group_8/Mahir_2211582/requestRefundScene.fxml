@@ -22,4 +22,5 @@
     <TextArea fx:id="refundReasonTextArea" layoutX="50.0" layoutY="420.0" prefHeight="100.0" prefWidth="700.0" promptText="Explain reason for refund request" />
 
     <Button layoutX="50.0" layoutY="500.0" onAction="#submitRefundRequestButtonOnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Submit Refund Request" />
+   <Button layoutX="685.0" layoutY="502.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Back" />
 </AnchorPane>

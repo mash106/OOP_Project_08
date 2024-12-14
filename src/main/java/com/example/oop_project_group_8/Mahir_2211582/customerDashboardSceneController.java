@@ -1,42 +1,71 @@
 package com.example.oop_project_group_8.Mahir_2211582;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class customerDashboardSceneController
-{
-    @javafx.fxml.FXML
+import java.io.IOException;
+
+public class customerDashboardSceneController {
+
+    private Scene scene;
+    private Parent root;
+
+    @FXML
     public void initialize() {
     }
-
-    @javafx.fxml.FXML
-    public void contactSupportButtonOnClickedDB(ActionEvent actionEvent) {
+    @FXML
+    public void contactSupportButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "contactSupportScene.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void orderHistoryButtonOnClickedDB(ActionEvent actionEvent) {
+
+    @FXML
+    public void orderHistoryButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "orderHistoryScene.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void placeOrderButtonOnClickedDB(ActionEvent actionEvent) {
+    @FXML
+    public void placeOrderButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "placingOrderScene.fxml");    }
+
+    @FXML
+    public void submitReviewButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "reviewProductScene.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void submitReviewButtonOnClickedDB(ActionEvent actionEvent) {
+    @FXML
+    public void browseProductsButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "browseProductScene.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void browseProductsButtonOnClickedDB(ActionEvent actionEvent) {
+    @FXML
+    public void requestRefundButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "requestRefundScene.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void requestRefundButtonOnClickedDB(ActionEvent actionEvent) {
+    @FXML
+    public void trackOrderButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "trackingOrderScene.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void trackOrderButtonOnClickedDB(ActionEvent actionEvent) {
+    @FXML
+    public void viewProductsButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "productDetailScene.fxml");
     }
-
-    @javafx.fxml.FXML
-    public void viewProductsButtonOnClickedDB(ActionEvent actionEvent) {
+    private void switchScene(ActionEvent event, String fxmlFile) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

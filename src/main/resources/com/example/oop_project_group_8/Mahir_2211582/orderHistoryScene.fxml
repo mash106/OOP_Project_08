@@ -19,4 +19,5 @@
     </TableView>
 
     <Button layoutX="50.0" layoutY="500.0" onAction="#viewInvoiceButtonOnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="View Invoice" />
+   <Button layoutX="236.0" layoutY="500.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Back" />
 </AnchorPane>

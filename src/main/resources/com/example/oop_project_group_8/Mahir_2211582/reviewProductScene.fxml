@@ -28,5 +28,6 @@
    <RadioButton fx:id="rating4RB" layoutX="438.0" layoutY="170.0" mnemonicParsing="false" text="4" textFill="WHITE" toggleGroup="$ratingTG" />
    <RadioButton fx:id="rating3RB" layoutX="328.0" layoutY="170.0" mnemonicParsing="false" text="3" textFill="WHITE" toggleGroup="$ratingTG" />
    <RadioButton fx:id="rating2RB" layoutX="217.0" layoutY="170.0" mnemonicParsing="false" text="2" textFill="WHITE" toggleGroup="$ratingTG" />
+   <Button layoutX="685.0" layoutY="500.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 5; -fx-padding: 10 20;" text="Back" />
 
 </AnchorPane>

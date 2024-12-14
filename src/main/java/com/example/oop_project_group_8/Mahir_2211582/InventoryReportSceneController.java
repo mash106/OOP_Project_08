@@ -115,4 +115,8 @@ public class InventoryReportSceneController {
         alert.setContentText(content);
         alert.showAndWait();
     }
+
+    @FXML
+    public void backButtonOnClicked(ActionEvent actionEvent) {
+    }
 }

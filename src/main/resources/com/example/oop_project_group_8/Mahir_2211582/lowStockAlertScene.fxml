@@ -19,5 +19,6 @@
     </TableView>
 
     <Button layoutX="50.0" layoutY="500.0" onAction="#restockButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Restock Selected Items" />
+   <Button layoutX="685.0" layoutY="519.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Back" />
 
 </AnchorPane>

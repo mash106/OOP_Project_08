@@ -95,4 +95,8 @@ public class ManageSupplierInfoSceneController {
         alert.setContentText(message);
         alert.showAndWait();
     }
+
+    @FXML
+    public void backButtonOnClicked(ActionEvent actionEvent) {
+    }
 }
