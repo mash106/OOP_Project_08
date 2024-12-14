@@ -40,24 +40,17 @@ public class loginSceneController
         String email = emailField.getText().trim();
         String selectedUserType = userTypeComboBox.getValue();
         System.out.println(selectedUserType);
-        // Validate user ID
         boolean isUserIdValid = userId.matches("\\d+") && userId.length() < 5;
-
-        // Validate email
         boolean isEmailValid = email.endsWith("@gmail.com");
 
         if (!isUserIdValid || !isEmailValid) {
             loginLabel.setText("Incorrect user ID or email");
             return;
         }
-
-        // Check if user type is selected
         if (selectedUserType == null) {
             loginLabel.setText("Please select a user type");
             return;
         }
-
-        // Determine the FXML scene to switch to
         String fxmlFile;
         switch (selectedUserType) {
             case "Customer":
@@ -83,7 +76,6 @@ public class loginSceneController
                 return;
         }
 
-        // Load the next scene
         try {
             String resourcePath = "com/example/oop_project_group_8/" + fxmlFile;
             FXMLLoader loader = new FXMLLoader(getClass().getResource(resourcePath));

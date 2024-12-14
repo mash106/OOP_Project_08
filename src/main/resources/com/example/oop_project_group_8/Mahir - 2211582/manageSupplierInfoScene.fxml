@@ -18,8 +18,6 @@
         </columns>
     </TableView>
 
-    <Button layoutX="486.0" layoutY="470.0" onAction="#addNewSupplierButtonOnClicked" styleClass="inventory-button" text="Add New Supplier" />
-
     <Button layoutX="486.0" layoutY="516.0" onAction="#editSelectedSupplierButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Edit Selected Supplier" />
    <TextField fx:id="supplierNameTF" layoutX="116.0" layoutY="470.0" />
    <TextField fx:id="supplierContactTF" layoutX="116.0" layoutY="504.0" />
@@ -27,5 +25,7 @@
    <Label layoutX="15.0" layoutY="545.0" text="Products Supplied:" textFill="WHITE" />
    <Label layoutX="19.0" layoutY="508.0" text="Supplier Contact:" textFill="WHITE" />
    <ComboBox fx:id="productSuppliedCB" layoutX="116.0" layoutY="541.0" prefWidth="150.0" />
+   <Button fx:id="addNewS" layoutX="486.0" layoutY="464.0" onAction="#addNewSupplierButtonOnClicked" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Add New Supplier" />
+   <Button layoutX="486.0" layoutY="562.0" onAction="#updateSupplierTableButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Update Supplier Table" />
 
 </AnchorPane>
