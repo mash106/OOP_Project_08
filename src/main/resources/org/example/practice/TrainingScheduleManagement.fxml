@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.TrainingScheduleManagementController">
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.TrainingScheduleManagementController">
     <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Training Schedule Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20" />
 
     <TextField fx:id="trainingProgramName" promptText="Training Program Name" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="60" />

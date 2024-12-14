@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="511.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.ProductInfoController">
+<AnchorPane prefHeight="511.0" prefWidth="562.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.ProductInfoController">
     <TextField fx:id="productNameField" promptText="Product Name" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
 
     <TextField fx:id="productCodeField" promptText="Product Code" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="80.0" />

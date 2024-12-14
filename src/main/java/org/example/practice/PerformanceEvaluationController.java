@@ -24,7 +24,7 @@ public class PerformanceEvaluationController {
     @FXML
     public void initialize() {
 
-        employeeSelector.getItems().addAll("Employee 1", "Employee 2", "Employee 3");
+        employeeSelector.getItems().addAll("John", "Jane", "Bob", "Alice", "Charlie", "Emma", "David", "Sophia", "James", "Olivia", "Liam", "Mia", "Noah", "Amelia", "Ethan");
 
     }
 
@@ -56,7 +56,6 @@ public class PerformanceEvaluationController {
         }
     }
 
-    // Helper method to show alerts
     private void showAlert(String title, String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);

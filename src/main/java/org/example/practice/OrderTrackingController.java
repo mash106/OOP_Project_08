@@ -1,6 +1,9 @@
 package org.example.practice;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -8,6 +11,9 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class OrderTrackingController {
 
@@ -57,6 +63,19 @@ public class OrderTrackingController {
         alert.setTitle(title);
         alert.setContentText(message);
         alert.showAndWait();
+
+    }
+    private void handleBackAction() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("CustomerserviceRepresentative.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) backButton.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Customer Service Representative");
+        } catch (IOException e) {
+            e.printStackTrace();
+            statusLabel.setText("Failed to load the previous scene.");
+        }
     }
 
 

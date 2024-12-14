@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.PerformanceEvaluationController">
+    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Performance Evaluation" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20" />
+
+    <ComboBox fx:id="employeeSelector" promptText="Select Employee for Review" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="60" />
+
+    <TextArea fx:id="evaluationForm" promptText="Enter Evaluation Details" AnchorPane.bottomAnchor="100" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="100" />
+
+    <Button fx:id="saveEvaluationButton" onAction="#handleSaveEvaluation" text="Save Evaluation" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" />
+
+    <Button fx:id="archiveEvaluationButton" onAction="#handleArchiveEvaluation" text="Archive Evaluation" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="200" />
+</AnchorPane>

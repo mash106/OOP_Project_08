@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.AppointmentController">
+
+    <ComboBox fx:id="serviceComboBox" prefWidth="300.0" promptText="Select Service" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+
+    <DatePicker fx:id="appointmentDatePicker" prefWidth="300.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="80.0" />
+
+    <ComboBox fx:id="timeSlotComboBox" prefWidth="300.0" promptText="Select Time Slot" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0" />
+
+    <Label fx:id="confirmationLabel" style="-fx-text-fill: black; -fx-font-size: 14;" text="Schedule your appointment" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" />
+
+    <Button fx:id="scheduleAppointmentButton" prefWidth="150.0" text="Schedule Appointment" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+
+    <Button fx:id="backButton" prefWidth="100.0" text="Back" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" />
+
+</AnchorPane>

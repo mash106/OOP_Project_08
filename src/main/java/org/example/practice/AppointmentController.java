@@ -3,11 +3,16 @@ package org.example.practice;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 public class AppointmentController {
@@ -26,6 +31,9 @@ public class AppointmentController {
 
     @FXML
     private Button scheduleAppointmentButton;
+
+    @FXML
+    private Button backButton;
 
     @FXML
     public void initialize() {
@@ -49,6 +57,7 @@ public class AppointmentController {
         timeSlotComboBox.setItems(timeSlots);
 
         scheduleAppointmentButton.setOnAction(event -> scheduleAppointment());
+        backButton.setOnAction(event -> goBackToCustomerService());
     }
 
     private void scheduleAppointment() {
@@ -65,6 +74,23 @@ public class AppointmentController {
                     selectedService, selectedDate, selectedTimeSlot
             ));
             confirmationLabel.setStyle("-fx-text-fill: green;");
+        }
+    }
+
+    private void goBackToCustomerService() {
+        try {
+            // Load the "CustomerserviceRepresentative.fxml" scene
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("CustomerserviceRepresentative.fxml"));
+            Parent root = loader.load();
+
+            // Get the current stage and set the new scene
+            Stage stage = (Stage) backButton.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Customer Service Representative");
+        } catch (IOException e) {
+            e.printStackTrace();
+            confirmationLabel.setText("Failed to load the previous scene.");
+            confirmationLabel.setStyle("-fx-text-fill: red;");
         }
     }
 }
