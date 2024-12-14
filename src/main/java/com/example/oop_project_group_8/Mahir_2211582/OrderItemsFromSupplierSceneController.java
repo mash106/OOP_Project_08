@@ -48,7 +48,6 @@ public class OrderItemsFromSupplierSceneController {
         String selectedSupplier = selectSupplierComboBox.getValue();
 
 
-        // Process the order (mock functionality)
         String message = String.format(
                 "Order placed successfully for item '%s' from supplier '%s'.",
                 selectedItem.getItemName(),

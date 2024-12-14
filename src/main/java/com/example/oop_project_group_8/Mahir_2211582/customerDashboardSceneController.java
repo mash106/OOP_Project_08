@@ -68,4 +68,10 @@ public class customerDashboardSceneController {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    public void logoutButtonOnClickedDB(ActionEvent event) {
+        switchScene(event, "loginScene.fxml");
+
+    }
 }

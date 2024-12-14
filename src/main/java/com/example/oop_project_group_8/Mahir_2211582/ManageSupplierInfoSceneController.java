@@ -4,8 +4,15 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class ManageSupplierInfoSceneController {
 
@@ -97,6 +104,16 @@ public class ManageSupplierInfoSceneController {
     }
 
     @FXML
-    public void backButtonOnClicked(ActionEvent actionEvent) {
+    public void backButtonOnClicked(ActionEvent event) {
+
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("inventoryManagerDashboardScene.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -20,7 +20,6 @@ public class OrderDetailSceneController {
     @FXML
     private Label shipmentDetailsLabel;
 
-    // Method to populate order details
     public void setOrder(Order order) {
         orderIdLabel.setText("Order ID: " + order.getOrderId());
         datePlacedLabel.setText("Date Placed: " + order.getDatePlaced());

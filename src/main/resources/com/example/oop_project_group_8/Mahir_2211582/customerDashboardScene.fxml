@@ -16,20 +16,21 @@
 
     <Separator style="-fx-background-color: white;" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="80" />
 
-    <Button layoutX="178.0" layoutY="120.0" onAction="#browseProductsButtonOnClickedDB" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Browse Products" />
+    <Button layoutX="191.0" layoutY="168.0" onAction="#browseProductsButtonOnClickedDB" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Browse Products" />
 
-    <Button layoutX="178.0" layoutY="200.0" onAction="#viewProductsButtonOnClickedDB" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="View Product Details" />
+    <Button layoutX="191.0" layoutY="248.0" onAction="#viewProductsButtonOnClickedDB" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="View Product Details" />
 
-    <Button layoutX="178.0" layoutY="280.0" onAction="#placeOrderButtonOnClickedDB" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Place Order" />
+    <Button layoutX="191.0" layoutY="328.0" onAction="#placeOrderButtonOnClickedDB" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Place Order" />
 
-    <Button layoutX="178.0" layoutY="360.0" onAction="#trackOrderButtonOnClickedDB" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Track Order Status" />
+    <Button layoutX="191.0" layoutY="408.0" onAction="#trackOrderButtonOnClickedDB" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Track Order Status" />
 
 
-    <Button layoutX="493.0" layoutY="120.0" onAction="#orderHistoryButtonOnClickedDB" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Order History" />
+    <Button layoutX="506.0" layoutY="168.0" onAction="#orderHistoryButtonOnClickedDB" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Order History" />
 
-    <Button layoutX="493.0" layoutY="200.0" onAction="#requestRefundButtonOnClickedDB" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Request Refund" />
+    <Button layoutX="506.0" layoutY="248.0" onAction="#requestRefundButtonOnClickedDB" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Request Refund" />
 
-    <Button layoutX="493.0" layoutY="280.0" onAction="#submitReviewButtonOnClickedDB" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Submit Product Review" />
+    <Button layoutX="506.0" layoutY="328.0" onAction="#submitReviewButtonOnClickedDB" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Submit Product Review" />
 
-    <Button layoutX="493.0" layoutY="360.0" onAction="#contactSupportButtonOnClickedDB" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Contact Support" />
+    <Button layoutX="506.0" layoutY="408.0" onAction="#contactSupportButtonOnClickedDB" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Contact Support" />
+   <Button layoutX="349.0" layoutY="519.0" onAction="#logoutButtonOnClickedDB" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #e74c3c;                    -fx-text-fill: white;                    -fx-background-radius: 5;                    -fx-padding: 10 20;" text="Logout" />
 </AnchorPane>
