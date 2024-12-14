@@ -4,6 +4,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -11,6 +12,11 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 public class EquipmentManagementController {
 
@@ -83,6 +89,35 @@ public class EquipmentManagementController {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
+    }
+
+    @FXML
+    public void handleBack(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/ms1group8/HatcheryTechnician.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Button getScheduleMaintBtn() {
+        return scheduleMaintBtn;
+    }
+
+    public void setScheduleMaintBtn(Button scheduleMaintBtn) {
+        this.scheduleMaintBtn = scheduleMaintBtn;
+    }
+
+    public Button getLogMalfunctionBtn() {
+        return logMalfunctionBtn;
+    }
+
+    public void setLogMalfunctionBtn(Button logMalfunctionBtn) {
+        this.logMalfunctionBtn = logMalfunctionBtn;
     }
 
     public static class Equipment {

@@ -20,7 +20,7 @@
         <columns>
             <TableColumn fx:id="campaignColumn" prefWidth="261.0" text="Campaign" />
             <TableColumn fx:id="statusColumn" prefWidth="213.0" text="Status" />
-            <TableColumn fx:id="roiColumn" prefWidth="254.0" text="ROI" />
+            <TableColumn fx:id="roiColumn" prefWidth="254.0" text="Return on investment" />
         </columns>
     </TableView>
 
@@ -28,4 +28,6 @@
     <TextArea fx:id="campaignConceptArea" layoutX="20.0" layoutY="322.0" prefHeight="100" prefWidth="250" promptText="Describe new campaign concept" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="322.0" />
 
     <Button fx:id="createCampaignBtn" layoutX="20.0" layoutY="430.0" onAction="#handleCreateCampaign" prefWidth="250" text="Create New Campaign" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="430.0" />
+
+    <Button fx:id="backBtn" layoutX="20.0" layoutY="480.0" onAction="#handleBackButton" prefWidth="100" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="480.0" />
 </AnchorPane>

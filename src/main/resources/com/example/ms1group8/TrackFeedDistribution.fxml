@@ -37,4 +37,5 @@
 
     <Button fx:id="updateInventoryBtn" onAction="#handleUpdateInventory" prefWidth="250" text="Update Inventory" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
 
+    <Button layoutX="20.0" layoutY="350.0" onAction="#handleBack" prefWidth="250" text="Back" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="350" />
 </AnchorPane>

@@ -30,4 +30,6 @@
     <TextField fx:id="reorderThresholdField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="350" />
 
     <Button fx:id="setNotificationsBtn" onAction="#handleSetNotifications" prefWidth="250" text="Set Reorder Notifications" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="400" />
+
+    <Button layoutX="20.0" layoutY="470.0" onAction="#handleBack" prefWidth="250" text="Back" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="470" />
 </AnchorPane>

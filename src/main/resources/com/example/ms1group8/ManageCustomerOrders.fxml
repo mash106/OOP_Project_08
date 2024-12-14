@@ -15,9 +15,10 @@
         </font>
     </Label>
 
-    <ComboBox fx:id="customerComboBox" prefWidth="250" promptText="Select Customer" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70" />
+    <Label text="Customer Name:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70" />
+    <TextField fx:id="customerNameField" prefWidth="250" promptText="Enter Customer Name" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="90" />
 
-    <ComboBox fx:id="fishSpeciesComboBox" prefWidth="250" promptText="Select Fish Species" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
+    <ComboBox fx:id="fishSpeciesComboBox" prefWidth="250" promptText="Select Fish Species" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="130" />
 
     <Label text="Order Quantity:" textFill="WHITE" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
     <TextField fx:id="quantityField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="190" />
@@ -26,4 +27,6 @@
     <TextField fx:id="totalPriceField" editable="false" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="250" />
 
     <Button fx:id="confirmOrderBtn" onAction="#handleConfirmOrder" prefWidth="250" text="Confirm Order" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
+
+    <Button fx:id="backBtn" onAction="#handleBackButton" prefWidth="100" text="Back" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="350" />
 </AnchorPane>

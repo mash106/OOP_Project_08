@@ -2,11 +2,15 @@ package com.example.ms1group8;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class BreedingOperationsController {
 
@@ -25,69 +29,52 @@ public class BreedingOperationsController {
 
     @FXML
     public void initialize() {
+        broodstockSpeciesComboBox.getItems().addAll("Species A", "Species B", "Species C");
+        broodstockSpeciesComboBox.setValue("Species A");
+        updateHealthStatus("Species A");
 
-        broodstockSpeciesComboBox.getItems().addAll(
-                "Tilapia",
-                "Ruhu",
-                "Carp",
-                "Pangasius",
-                "Catla",
-                "Grass Carp"
-        );
+        spawningCycleField.setText("Cycle 1");
 
-
-        broodstockSpeciesComboBox.setOnAction(this::updateBroodstockInfo);
+        broodstockSpeciesComboBox.setOnAction(event -> {
+            String selectedSpecies = broodstockSpeciesComboBox.getValue();
+            updateHealthStatus(selectedSpecies);
+        });
     }
 
-    private void updateBroodstockInfo(ActionEvent event) {
-        String selectedSpecies = broodstockSpeciesComboBox.getSelectionModel().getSelectedItem();
-        if (selectedSpecies != null) {
-            switch (selectedSpecies) {
-                case "Tilapia":
-                    broodstockHealthField.setText("Healthy");
-                    spawningCycleField.setText("Monthly");
-                    break;
-                case "Ruhu":
-                    broodstockHealthField.setText("Good");
-                    spawningCycleField.setText("Bi-Monthly");
-                    break;
-                case "Pangasius":
-                    broodstockHealthField.setText("Excellent");
-                    spawningCycleField.setText("Yearly");
-                    break;
-                case "Catla":
-                    broodstockHealthField.setText("Fair");
-                    spawningCycleField.setText("Seasonal");
-                    break;
-                case "Grass Carp":
-                    broodstockHealthField.setText("Good");
-                    spawningCycleField.setText("Quarterly");
-                    break;
-            }
+    private void updateHealthStatus(String species) {
+        switch (species) {
+            case "Species A":
+                broodstockHealthField.setText("Healthy");
+                break;
+            case "Species B":
+                broodstockHealthField.setText("Needs Attention");
+                break;
+            case "Species C":
+                broodstockHealthField.setText("Critical");
+                break;
+            default:
+                broodstockHealthField.setText("Unknown");
+                break;
         }
     }
 
     @FXML
     public void handleEggCollection(ActionEvent actionEvent) {
-        String selectedSpecies = broodstockSpeciesComboBox.getSelectionModel().getSelectedItem();
-        String geneticNotes = geneticDiversityNotesArea.getText();
-
-        if (selectedSpecies == null) {
-            showAlert("No Species Selected", "Please select a broodstock species before managing egg collection.");
+        String selectedSpecies = broodstockSpeciesComboBox.getValue();
+        if (selectedSpecies == null || selectedSpecies.isEmpty()) {
+            showAlert("No Species Selected", "Please select a species for egg collection.");
         } else {
-
-            showAlert("Egg Collection Managed", "Egg collection for " + selectedSpecies + " has been managed. Notes: " + geneticNotes);
+            showAlert("Egg Collection", "Egg collection for " + selectedSpecies + " has been managed.");
         }
     }
 
     @FXML
     public void handleFingerlingsTransfer(ActionEvent actionEvent) {
-        String selectedSpecies = broodstockSpeciesComboBox.getSelectionModel().getSelectedItem();
-
-        if (selectedSpecies == null) {
-            showAlert("No Species Selected", "Please select a broodstock species before transferring fingerlings.");
+        String selectedSpecies = broodstockSpeciesComboBox.getValue();
+        if (selectedSpecies == null || selectedSpecies.isEmpty()) {
+            showAlert("No Species Selected", "Please select a species for fingerlings transfer.");
         } else {
-            showAlert("Fingerlings Transferred", "Fingerlings for " + selectedSpecies + " have been transferred.");
+            showAlert("Fingerlings Transfer", "Fingerlings for " + selectedSpecies + " have been transferred.");
         }
     }
 
@@ -97,5 +84,39 @@ public class BreedingOperationsController {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
+    }
+
+    public void handleBackButton(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/ms1group8/HatcheryTechnician.fxml"));
+            AnchorPane hatcheryTechnicianPane = loader.load();
+
+            Stage stage = (Stage) eggCollectionBtn.getScene().getWindow();
+
+            Scene scene = new Scene(hatcheryTechnicianPane);
+            stage.setScene(scene);
+
+            HatcheryTechnicianController hatcheryTechnicianController = loader.getController();
+            hatcheryTechnicianController.initialize();
+        } catch (Exception e) {
+            e.printStackTrace();
+            showAlert("Error", "An error occurred while navigating back to the Hatchery Technician dashboard.");
+        }
+    }
+
+    public TextArea getGeneticDiversityNotesArea() {
+        return geneticDiversityNotesArea;
+    }
+
+    public void setGeneticDiversityNotesArea(TextArea geneticDiversityNotesArea) {
+        this.geneticDiversityNotesArea = geneticDiversityNotesArea;
+    }
+
+    public Button getFingerlingsTransferBtn() {
+        return fingerlingsTransferBtn;
+    }
+
+    public void setFingerlingsTransferBtn(Button fingerlingsTransferBtn) {
+        this.fingerlingsTransferBtn = fingerlingsTransferBtn;
     }
 }

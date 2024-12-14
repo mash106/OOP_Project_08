@@ -2,9 +2,16 @@ package com.example.ms1group8;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import javafx.scene.control.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
+import java.io.IOException;
 
 public class FeedDistributionController {
 
@@ -21,7 +28,7 @@ public class FeedDistributionController {
 
     private final ObservableList<String> tankNumbers = FXCollections.observableArrayList("Tank 1", "Tank 2", "Tank 3", "Tank 4", "Tank 5");
     private final ObservableList<String> feedTypes = FXCollections.observableArrayList("Starter", "Grower", "Finisher");
-    private int currentInventory = 1000; // Example initial inventory (in kg)
+    private int currentInventory = 1000;
 
     @FXML
     public void initialize() {
@@ -79,5 +86,26 @@ public class FeedDistributionController {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
+    }
+
+    @FXML
+    public void handleBack(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("HatcheryTechnician.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Button getUpdateInventoryBtn() {
+        return updateInventoryBtn;
+    }
+
+    public void setUpdateInventoryBtn(Button updateInventoryBtn) {
+        this.updateInventoryBtn = updateInventoryBtn;
     }
 }

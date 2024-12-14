@@ -38,4 +38,6 @@
 
     <Label layoutX="20.0" layoutY="448.0" text="Engagement Metrics:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="448.0" />
     <TextField fx:id="engagementMetricsField" editable="false" layoutX="20.0" layoutY="475.0" prefWidth="250" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="475.0" />
+
+    <Button fx:id="backBtn" text="Back" onAction="#handleBackButton" prefWidth="100" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="510" />
 </AnchorPane>

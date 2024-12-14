@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="554.0" prefWidth="519.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="fish-transportation-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.FishTransportationController">
 
-    <Label styleClass="title-label" text="Fish Logistics" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
+    <Label layoutX="199.0" layoutY="20.0" styleClass="title-label" text="Fish Logistics" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="20.0">
         <font>
             <Font name="Arial Bold" size="18" />
         </font>
@@ -28,4 +28,6 @@
     <TextArea fx:id="packingDetailsArea" prefHeight="100" prefWidth="250" promptText="Packing and Courier Arrangements" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="300" />
 
     <Button fx:id="coordinateTransportBtn" onAction="#handleCoordinateTransport" prefWidth="250" text="Coordinate Transportation" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="420" />
-    </AnchorPane>
+
+    <Button fx:id="backButton" layoutX="400.0" layoutY="497.0" onAction="#handleBackButton" prefWidth="100" text="Back" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="497.0" />
+</AnchorPane>

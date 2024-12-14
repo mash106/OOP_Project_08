@@ -31,4 +31,6 @@
     <TextField fx:id="newMarketPriceField" prefWidth="250" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="320" />
 
     <Button fx:id="updatePricesBtn" onAction="#handleUpdatePrices" prefWidth="250" text="Update Prices" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="370" />
+
+    <Button fx:id="backBtn" onAction="#handleBackButton" prefWidth="100" text="Back" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="420" />
 </AnchorPane>
