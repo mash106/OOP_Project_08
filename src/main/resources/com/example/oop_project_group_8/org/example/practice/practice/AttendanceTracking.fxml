@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50); -fx-background-color: ;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.org.example.practice.practice.AttendanceTrackingController">
+    <DatePicker fx:id="attendanceDatePicker" layoutX="20.0" layoutY="20.0" />
+
+    <Button fx:id="saveAttendanceButton" layoutX="680.0" layoutY="20.0" text="Save Attendance" />
+
+    <TableView fx:id="attendanceTableView" layoutX="20.0" layoutY="60.0" prefHeight="500.0" prefWidth="760.0">
+        <columns>
+            <TableColumn fx:id="employeeIdColumn" prefWidth="150.0" text="Employee ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="250.0" text="Name" />
+            <TableColumn fx:id="attendanceStatusColumn" prefWidth="200.0" text="Attendance Status" />
+            <TableColumn fx:id="attendanceActionColumn" prefWidth="160.0" text="Actions" />
+        </columns>
+    </TableView>
+</AnchorPane>

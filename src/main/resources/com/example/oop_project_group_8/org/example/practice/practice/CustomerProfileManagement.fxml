@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="680.0" prefWidth="596.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.org.example.practice.practice.CustomerProfileController">
+    <TextField fx:id="searchField" onKeyReleased="#searchCustomer" promptText="Search Customer" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+
+    <TableView fx:id="customerDetailsTable" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+        <columns>
+            <TableColumn fx:id="fieldColumn" text="Field" />
+            <TableColumn fx:id="valueColumn" text="Value" />
+        </columns>
+    </TableView>
+
+    <ComboBox fx:id="profileReportComboBox" onAction="#generateReport" promptText="Generate Report" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" />
+
+    <Button fx:id="updateProfileButton" onAction="#updateProfile" text="Update Profile" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+</AnchorPane>

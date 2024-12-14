@@ -55,6 +55,7 @@ public class loginSceneController {
             loginLabel.setText("Please select a user type");
             return;
         }
+
         String fxmlFile = getFxmlFileForUserType(selectedUserType);
         if (fxmlFile == null) {
             loginLabel.setText("Unknown user type");
@@ -75,9 +76,9 @@ public class loginSceneController {
             case "Sales & Marketing Manager":
                 return "/com/example/oop_project_group_8/Tasin_2211161/SalesAndMarketingManager.fxml";
             case "HR Manager":
-                return "/hrManager.fxml";
+                return "/com/example/oop_project_group_8/org/example/practice/practice/HR Manager dashboard.fxml";
             case "Customer Service Representative":
-                return "/customerServiceRepresentative.fxml";
+                return "/com/example/oop_project_group_8/org/example/practice/practice/CustomerserviceRepresentative.fxml";
             default:
                 return null;
         }
@@ -85,17 +86,16 @@ public class loginSceneController {
 
     private void switchScene(ActionEvent event, String fxmlFile) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
-            if (root == null) {
-                throw new IOException("FXML file not found: " + fxmlFile);
-            }
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            Parent root = loader.load();
+
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
-            loginLabel.setText("Error loading the next scene. Check resource paths.");
+            loginLabel.setText("Error loading the next scene. Check resource paths: " + e.getMessage());
         }
     }
 }
