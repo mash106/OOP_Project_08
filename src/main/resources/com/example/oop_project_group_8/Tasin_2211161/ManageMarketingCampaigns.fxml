@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="765.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="marketing-campaign-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Tasin_2211161.MarketingCampaignController">
+
+    <Label styleClass="title-label" text="Marketing Campaign Management" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
+        <font>
+            <Font name="Arial Bold" size="18" />
+        </font>
+    </Label>
+
+    <TableView fx:id="campaignTable" prefHeight="150" prefWidth="729.0" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70">
+        <columns>
+            <TableColumn fx:id="campaignColumn" prefWidth="261.0" text="Campaign" />
+            <TableColumn fx:id="statusColumn" prefWidth="213.0" text="Status" />
+            <TableColumn fx:id="roiColumn" prefWidth="254.0" text="Return on investment" />
+        </columns>
+    </TableView>
+
+    <Label layoutX="20.0" layoutY="288.0" text="Campaign Concept:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="288.0" />
+    <TextArea fx:id="campaignConceptArea" layoutX="20.0" layoutY="322.0" prefHeight="100" prefWidth="250" promptText="Describe new campaign concept" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="322.0" />
+
+    <Button fx:id="createCampaignBtn" layoutX="20.0" layoutY="430.0" onAction="#handleCreateCampaign" prefWidth="250" text="Create New Campaign" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="430.0" />
+
+    <Button fx:id="backBtn" layoutX="20.0" layoutY="480.0" onAction="#handleBackButton" prefWidth="100" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="480.0" />
+</AnchorPane>

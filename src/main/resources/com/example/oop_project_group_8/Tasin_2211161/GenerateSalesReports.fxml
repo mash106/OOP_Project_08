@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane prefHeight="554.0" prefWidth="748.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" styleClass="sales-report-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Tasin_2211161.SalesReportController">
+
+    <Label styleClass="title-label" text="Sales Reports Generator" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
+        <font>
+            <Font name="Arial Bold" size="18" />
+        </font>
+    </Label>
+
+    <ComboBox fx:id="reportTypeComboBox" prefWidth="250" promptText="Select Report Type" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Monthly Sales" />
+                <String fx:value="Quarterly Performance" />
+                <String fx:value="Annual Summary" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <DatePicker fx:id="startDatePicker" prefWidth="250" promptText="Start Date" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="120" />
+
+    <DatePicker fx:id="endDatePicker" prefWidth="250" promptText="End Date" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="170" />
+
+    <Button fx:id="generateReportBtn" onAction="#handleGenerateReport" prefWidth="250" text="Generate Report" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="220" />
+
+    <Button fx:id="exportPDFBtn" onAction="#handleExportPDF" prefWidth="250" text="Export as PDF" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="270" />
+
+    <Button fx:id="backBtn" onAction="#handleBackButton" prefWidth="100" text="Back" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="320" />
+
+    <PieChart fx:id="salesPieChart" layoutX="300" layoutY="70" prefWidth="400" prefHeight="400" />
+</AnchorPane>
