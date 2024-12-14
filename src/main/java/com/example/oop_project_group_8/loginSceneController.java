@@ -71,9 +71,9 @@ public class loginSceneController {
             case "Inventory Manager":
                 return "/com/example/oop_project_group_8/Mahir_2211582/inventoryManagerDashboardScene.fxml";
             case "Hatchery Technician":
-                return "/hatcheryTechnician.fxml";
+                return "/com/example/oop_project_group_8/Tasin_2211161/HatcheryTechnician.fxml";
             case "Sales & Marketing Manager":
-                return "/salesMarketingManager.fxml";
+                return "/com/example/oop_project_group_8/Tasin_2211161/SalesAndMarketingManager.fxml";
             case "HR Manager":
                 return "/hrManager.fxml";
             case "Customer Service Representative":

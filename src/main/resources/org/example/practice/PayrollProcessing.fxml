@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="638.0" prefWidth="659.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practice.PayrollProcessingController">
+    <ComboBox fx:id="payPeriodComboBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+
+    <TableView fx:id="payrollTableView" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+        <columns>
+            <TableColumn fx:id="employeeIdColumn" text="Employee ID" />
+            <TableColumn fx:id="nameColumn" text="Name" />
+            <TableColumn fx:id="baseSalaryColumn" text="Base Salary" />
+            <TableColumn fx:id="bonusColumn" text="Bonus" />
+            <TableColumn fx:id="totalSalaryColumn" text="Total Salary" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="processPayrollButton" onAction="#handleProcessPayroll" text="Process Payroll" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+    <Button fx:id="backButton" text="Back" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
+
+</AnchorPane>

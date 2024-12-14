@@ -94,7 +94,7 @@ public class FishStockRecordsController {
     @FXML
     public void handleBackButton(ActionEvent actionEvent) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/ms1group8/HatcheryTechnician.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("HatcheryTechnician.fxml"));
             AnchorPane hatcheryTechnicianPane = loader.load();
 
             Stage stage = (Stage) backButton.getScene().getWindow();
