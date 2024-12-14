@@ -4,10 +4,16 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,7 +37,6 @@ public class InventoryReportSceneController {
 
     @FXML
     public void initialize() {
-        // Populate combo boxes with options
         reportParameterComboBox.setItems(FXCollections.observableArrayList("Category", "Individual Items"));
         reportTypeComboBox.setItems(FXCollections.observableArrayList("Quantity Distribution", "Price Distribution"));
     }
@@ -117,6 +122,16 @@ public class InventoryReportSceneController {
     }
 
     @FXML
-    public void backButtonOnClicked(ActionEvent actionEvent) {
+    public void backButtonOnClicked(ActionEvent event) {
+
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("inventoryManagerDashboardScene.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

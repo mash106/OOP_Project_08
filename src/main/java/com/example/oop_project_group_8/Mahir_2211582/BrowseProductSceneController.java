@@ -105,7 +105,6 @@ public class BrowseProductSceneController {
         if (selectedType == null || selectedType.equals("All")) {
             productCatalogTable.setItems(productList);
         } else {
-            // Filter products by selected type
             filteredList = FXCollections.observableArrayList();
             for (Product product : productList) {
                 if (product.getSpecies().equalsIgnoreCase(selectedType)) {
