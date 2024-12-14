@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Mahir_2211582.InventoryReportSceneController">
+    <Label layoutX="50.0" layoutY="30.0" style="-fx-font-size: 24px; -fx-text-fill: #2C3E50;" text="Inventory Reports" />
+
+    <ComboBox fx:id="reportTypeComboBox" layoutX="50.0" layoutY="100.0" prefWidth="350.0" promptText="Select Report Type" />
+
+    <ComboBox fx:id="reportParameterComboBox" layoutX="400.0" layoutY="100.0" prefWidth="350.0" promptText="Select Parameters" />
+
+    <DatePicker fx:id="startDatePicker" layoutX="50.0" layoutY="170.0" prefWidth="350.0" promptText="Start Date" />
+
+    <DatePicker fx:id="endDatePicker" layoutX="400.0" layoutY="170.0" prefWidth="350.0" promptText="End Date" />
+
+    <Button layoutX="50.0" layoutY="500.0" onAction="#generateReportButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Generate Report" />
+   <PieChart fx:id="reportPieChart" layoutX="225.0" layoutY="223.0" prefHeight="296.0" prefWidth="430.0" />
+   <Button layoutX="685.0" layoutY="501.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Back" />
+
+</AnchorPane>

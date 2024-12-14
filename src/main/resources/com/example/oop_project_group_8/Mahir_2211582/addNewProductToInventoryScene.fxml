@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Mahir_2211582.AddNewProductToInventorySceneController">
+
+    <Label layoutX="50.0" layoutY="30.0" style="-fx-font-size: 24px; -fx-text-fill: #2C3E50;" text="Add New Inventory Item" />
+
+    <TextField fx:id="itemNameField" layoutX="50.0" layoutY="100.0" prefWidth="700.0" promptText="Item Name" />
+
+    <TextField fx:id="skuField" layoutX="50.0" layoutY="170.0" prefWidth="350.0" promptText="SKU Number" />
+
+    <TextField fx:id="priceField" layoutX="400.0" layoutY="170.0" prefWidth="350.0" promptText="Price" />
+
+    <TextField fx:id="quantityField" layoutX="50.0" layoutY="240.0" prefWidth="350.0" promptText="Quantity" />
+
+    <TextArea fx:id="descriptionArea" layoutX="50.0" layoutY="310.0" prefHeight="150.0" prefWidth="700.0" promptText="Item Description" />
+
+    <Button layoutX="50.0" layoutY="480.0" onAction="#addItemToInventoryButtonOnAction" styleClass="inventory-button" text="Add Item to Inventory" />
+   <Button layoutX="709.0" layoutY="480.0" onAction="#backButtonOnClicked" styleClass="inventory-button" text="Back" />
+</AnchorPane>

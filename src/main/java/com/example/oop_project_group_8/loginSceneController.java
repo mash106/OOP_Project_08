@@ -1,26 +1,31 @@
 package com.example.oop_project_group_8;
 
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.stage.Stage;
+import javafx.scene.Node;
+import java.io.IOException;
 
-public class loginSceneController
-{
-    @javafx.fxml.FXML
-    private ComboBox userTypeComboBox;
-    @javafx.fxml.FXML
+public class loginSceneController {
+
+    @FXML
+    private ComboBox<String> userTypeComboBox;
+    @FXML
     private TextField userIdField;
-    @javafx.fxml.FXML
+    @FXML
     private Button loginButton;
-    @javafx.fxml.FXML
-    private Button forgetPasswordButton;
-    @javafx.fxml.FXML
+    @FXML
     private TextField emailField;
-    @javafx.fxml.FXML
+    @FXML
     private PasswordField passwordField;
+    @FXML
+    private Label loginLabel;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
         userTypeComboBox.getItems().addAll(
                 "Customer",
@@ -28,9 +33,69 @@ public class loginSceneController
                 "Hatchery Technician",
                 "Sales & Marketing Manager",
                 "HR Manager",
-                "Customer Service Representative",
-                "Feed Technician",
-                "Hatchery Maintenance Manager"
+                "Customer Service Representative"
         );
+    }
 
-    }}
+    @FXML
+    public void loginButtonOnAction(ActionEvent actionEvent) {
+        String userId = userIdField.getText().trim();
+        String email = emailField.getText().trim();
+        String selectedUserType = userTypeComboBox.getValue();
+        System.out.println("Selected User Type: " + selectedUserType);
+
+        boolean isUserIdValid = userId.matches("\\d+") && userId.length() < 5;
+        boolean isEmailValid = email.endsWith("@gmail.com");
+
+        if (!isUserIdValid || !isEmailValid) {
+            loginLabel.setText("Incorrect user ID or email");
+            return;
+        }
+        if (selectedUserType == null) {
+            loginLabel.setText("Please select a user type");
+            return;
+        }
+        String fxmlFile = getFxmlFileForUserType(selectedUserType);
+        if (fxmlFile == null) {
+            loginLabel.setText("Unknown user type");
+            return;
+        }
+
+        switchScene(actionEvent, fxmlFile);
+    }
+
+    private String getFxmlFileForUserType(String userType) {
+        switch (userType) {
+            case "Customer":
+                return "/com/example/oop_project_group_8/Mahir_2211582/customerDashboardScene.fxml";
+            case "Inventory Manager":
+                return "/com/example/oop_project_group_8/Mahir_2211582/inventoryManagerDashboardScene.fxml";
+            case "Hatchery Technician":
+                return "/hatcheryTechnician.fxml";
+            case "Sales & Marketing Manager":
+                return "/salesMarketingManager.fxml";
+            case "HR Manager":
+                return "/hrManager.fxml";
+            case "Customer Service Representative":
+                return "/customerServiceRepresentative.fxml";
+            default:
+                return null;
+        }
+    }
+
+    private void switchScene(ActionEvent event, String fxmlFile) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
+            if (root == null) {
+                throw new IOException("FXML file not found: " + fxmlFile);
+            }
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            loginLabel.setText("Error loading the next scene. Check resource paths.");
+        }
+    }
+}

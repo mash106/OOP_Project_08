@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="860.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_group_8.Mahir_2211582.LowStockAlertSceneController">
+    <Label layoutX="50.0" layoutY="30.0" style="-fx-font-size: 24px; -fx-text-fill: #2C3E50;" text="Low Stock Alerts" />
+
+    <TableView fx:id="lowStockAlertsTV" layoutX="50.0" layoutY="100.0" prefHeight="350.0" prefWidth="700.0">
+        <columns>
+            <TableColumn fx:id="lowStockItemidTC" prefWidth="100.0" text="Item ID" />
+            <TableColumn fx:id="lowStockItemNameTC" prefWidth="250.0" text="Item Name" />
+            <TableColumn fx:id="lowStockItemQuantityTC" prefWidth="150.0" text="Current Quantity" />
+            <TableColumn fx:id="lowStockItemRestockTC" prefWidth="200.0" text="Restock Level" />
+        </columns>
+    </TableView>
+
+    <Button layoutX="50.0" layoutY="500.0" onAction="#restockButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Restock Selected Items" />
+   <Button layoutX="685.0" layoutY="519.0" onAction="#backButtonOnClicked" style="-fx-background-color: #e74c3c;             -fx-text-fill: white;             -fx-background-radius: 5;             -fx-padding: 10 20;" text="Back" />
+
+</AnchorPane>
