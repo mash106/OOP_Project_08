@@ -88,7 +88,7 @@ public class BrandAwarenessController {
     @FXML
     public void handleBackButton(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/example/ms1group8/SalesAndMarketingManager.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("SalesAndMarketingManager.fxml"));
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
