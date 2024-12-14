@@ -16,47 +16,47 @@ public class SalesAndMarketingManagerController {
 
     @FXML
     public void handleManageCustomerOrders(ActionEvent event) {
-        switchScene(event, "ManageCustomerOrders.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/ManageCustomerOrders.fxml");
     }
 
     @FXML
     public void handleTrackMarketTrends(ActionEvent event) {
-        switchScene(event, "TrackMarketTrendsAndPriceAnalysis.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/TrackMarketTrendsAndPriceAnalysis.fxml");
     }
 
     @FXML
     public void handleGenerateSalesReports(ActionEvent event) {
-        switchScene(event, "GenerateSalesReports.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/GenerateSalesReports.fxml");
     }
 
     @FXML
     public void handleManageMarketingCampaigns(ActionEvent event) {
-        switchScene(event, "ManageMarketingCampaigns.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/ManageMarketingCampaigns.fxml");
     }
 
     @FXML
     public void handleCustomerRelationshipManagement(ActionEvent event) {
-        switchScene(event, "HandleCustomerRelationshipManagement.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/HandleCustomerRelationshipManagement.fxml");
     }
 
     @FXML
     public void handleMonitorInventory(ActionEvent event) {
-        switchScene(event, "MonitorInventoryForSalesPlanning.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/MonitorInventoryForSalesPlanning.fxml");
     }
 
     @FXML
     public void handleDevelopSeasonalPromotions(ActionEvent event) {
-        switchScene(event, "DevelopSeasonalPromotionStrategies.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/DevelopSeasonalPromotionStrategies.fxml");
     }
 
     @FXML
     public void handleEnhanceBrandAwareness(ActionEvent event) {
-        switchScene(event, "EnhanceBrandAwareness.fxml");
+        switchScene(event, "/com/example/oop_project_group_8/Tasin_2211161/EnhanceBrandAwareness.fxml");
     }
 
     @FXML
     public void handleBackButton(ActionEvent event) {
-        switchScene(event, "SalesAndMarketingManager.fxml");
+        switchScene(event, "loginScene.fxml");
     }
 
     private void switchScene(ActionEvent event, String fxmlFile) {
