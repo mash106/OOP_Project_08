@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom, #4CA1AF, #2C3E50);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1group8.HatcheryTechnicianController">
+
+    <Label layoutX="239.0" layoutY="8.0" text="Hatchery Technician Dashboard">
+        <font>
+            <Font name="Khand Bold" size="28.0" />
+        </font>
+    </Label>
+
+    <Button layoutX="20" layoutY="70" onAction="#handleMonitorFishHealth" prefHeight="25.0" prefWidth="271.0" text="Monitor Fish Health" />
+    <Button layoutX="20" layoutY="120" onAction="#handleTrackFeedDistribution" prefHeight="25.0" prefWidth="271.0" text="Track Feed Distribution and Inventory" />
+    <Button layoutX="20" layoutY="170" onAction="#handleMaintainWaterQuality" prefHeight="25.0" prefWidth="271.0" text="Maintain Water Quality" />
+    <Button layoutX="20" layoutY="220" onAction="#handleManageInventory" prefHeight="25.0" prefWidth="271.0" text="Manage Inventory" />
+    <Button layoutX="20" layoutY="270" onAction="#handleHatcheryEquipment" prefHeight="25.0" prefWidth="271.0" text="Maintain Hatchery Equipment" />
+    <Button layoutX="20" layoutY="320" onAction="#handleOverseeBreeding" prefHeight="25.0" prefWidth="271.0" text="Oversee Breeding Operations" />
+    <Button layoutX="20" layoutY="370" onAction="#handleMaintainFishStock" prefHeight="25.0" prefWidth="271.0" text="Maintain Records of Fish Stock" />
+    <Button layoutX="20" layoutY="420" onAction="#handleHandleFishTransportation" prefHeight="25.0" prefWidth="271.0" text="Handle Fish Transportation" />
+    <ImageView fitHeight="318.0" fitWidth="382.0" layoutX="474.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../images/fish.png" />
+    </ImageView>
+    <ImageView fitHeight="271.0" fitWidth="318.0" layoutX="500.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../images/cute-cartoon-aquaculture-technic-removebg-preview.png" />
+    </ImageView>
+</AnchorPane>
